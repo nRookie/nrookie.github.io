@@ -223,3 +223,12 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+
+
+collections:
+  k8s-related:
+    output: true
+  docker-related:
+    output: true
+  tidb:
+    output: true

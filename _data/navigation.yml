@@ -48,3 +48,13 @@ header:
       fr-LU   : *FR
       # @end locale config
     url: /about.html
+
+
+k8s-related:
+  - title:      k8s-related
+    children:
+      - title:  chapter1
+        url:    k8s-related/chapter1.html
+      - title:  安装
+        url:    k8s-related/chapter1.html
+      - title:  快速使用
