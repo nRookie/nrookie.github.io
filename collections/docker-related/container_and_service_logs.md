@@ -36,3 +36,52 @@ That was the daemon logs. What about container logs?
 
 ## Container logs
 
+Logs from standalone containers can be viewed with the docker container logs command, and Swarm service logs can be viewed with the docker service logs command. However, Docker supports lots of logging drivers, and they don’t all work with the docker logs command.
+
+
+### Logging drivers 
+
+As well as a driver and configuration for daemon logs, every Docker host has a default logging driver and configuration for containers. Some of the drivers include:
+
+
+- json-file (default)
+- journald (only works on Linux hosts running systemd)
+- syslog
+- splunk 
+- gelf
+
+
+json-file and journald are probably the easiest to configure, and they both work with the docker logs and docker service logs commands. The format of the commands is docker logs <container-name> and docker service logs <service-name>.
+
+
+The following snippet from a daemon.json shows a Docker host configured to use syslog.
+
+``` shell
+{
+  "log-driver": "syslog"
+}
+```
+
+
+You can configure an individual container, or service, to start with a particular logging driver with the --log-driver and --log-opts flags. These will override anything set in daemon.json.
+
+Container logs work on the premise that your application is running as PID 1 inside the container and sending logs to STDOUT, and errors to STDERR. The logging driver then forwards these “logs” to the locations configured via the logging driver.
+
+If your application logs to a file, it’s possible to use a symlink to redirect log-file writes to STDOUT and STDERR.
+
+The following is an example of running the docker logs command against a container called “vantage-db” configured to use the json-file logging driver.
+
+``` shell
+
+$ docker logs vantage-db
+1:C 2 Feb 09:53:22.903 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 2 Feb 09:53:22.904 # Redis version=4.0.6, bits=64, commit=00000000, modified=0, pid=1
+1:C 2 Feb 09:53:22.904 # Warning: no config file specified, using the default config.
+1:M 2 Feb 09:53:22.906 * Running mode=standalone, port=6379.
+1:M 2 Feb 09:53:22.906 # WARNING: The TCP backlog setting of 511 cannot be enforced because...
+1:M 2 Feb 09:53:22.906 # Server initialized
+1:M 2 Feb 09:53:22.906 # WARNING overcommit_memory is set to 0!
+
+```
+
+There’s a good chance you’ll find network connectivity errors reported in the daemon logs or container logs.

@@ -282,4 +282,128 @@ ReferenceError: ls is not defined
  at least this one is working
 
 
- 
+
+> mysql schema: The mysql schema is the system schema. It contains tables that store information required by the MySQL server as it runs. A broad categorization is that the mysql schema contains data dictionary tables that store database object metadata, and system tables used for other operational purposes. The following discussion further subdivides the set of system tables into smaller categories.
+
+
+
+## use mysqlsh operating TiDB
+- \? to get help
+
+
+1. \sql to execute sql command
+
+
+2. create a database
+
+``` shell
+MySQL  127.0.0.1:4000  SQL > CREATE DATABASE mynewdatabase;
+Query OK, 0 rows affected (0.1052 sec)
+
+```
+
+3. use the database
+``` shell
+ MySQL  127.0.0.1:4000  SQL > use mynewdatabase;
+Default schema set to `mynewdatabase`.
+Fetching table and column names from `mynewdatabase` for auto-completion... Press ^C to stop.
+ MySQL  127.0.0.1:4000  mynewdatabase  SQL > 
+```
+
+4. create a hello_world table
+
+``` shell
+ MySQL  127.0.0.1:4000  mynewdatabase  SQL > create table hello_world (id int unsigned not null auto_increment primary key, v varchar(32));
+Query OK, 0 rows affected (0.1176 sec)
+ MySQL  127.0.0.1:4000  mynewdatabase  SQL > Query OK, 0 rows affected (0.17 sec)
+```
+
+5. Query the TiDB version
+
+``` shell
+ MySQL  127.0.0.1:4000  mynewdatabase  SQL > select tidb_version()\G
+
+*************************** 1. row ***************************
+tidb_version(): Release Version: v5.1.0
+Edition: Community
+Git Commit Hash: 8acd5c88471cb7b4d4c4a8ed73b4d53d6833f13e
+Git Branch: heads/refs/tags/v5.1.0
+UTC Build Time: 2021-06-24 07:10:32
+GoVersion: go1.16.4
+Race Enabled: false
+TiKV Min Version: v3.0.0-60965b006877ca7234adaced7890d7b029ed1306
+Check Table Before Drop: false
+1 row in set (0.0034 sec)
+```
+
+6. Query the TiKV store status:
+
+``` shell
+ MySQL  127.0.0.1:4000  mynewdatabase  SQL > select * from information_schema.tikv_store_status \G
+
+*************************** 1. row ***************************
+         STORE_ID: 1
+          ADDRESS: basic-tikv-0.basic-tikv-peer.tidb-cluster.svc:20160
+      STORE_STATE: 0
+ STORE_STATE_NAME: Up
+            LABEL: null
+          VERSION: 5.1.0
+         CAPACITY: 58.42GiB
+        AVAILABLE: 24.99GiB
+     LEADER_COUNT: 26
+    LEADER_WEIGHT: 1
+     LEADER_SCORE: 26
+      LEADER_SIZE: 26
+     REGION_COUNT: 26
+    REGION_WEIGHT: 1
+     REGION_SCORE: 5002411.315871374
+      REGION_SIZE: 26
+         START_TS: 2021-08-07 12:37:16
+LAST_HEARTBEAT_TS: 2021-08-08 10:35:49
+           UPTIME: 21h58m33.267599923s
+1 row in set (0.0101 sec)
+```
+
+7. query the TiDB cluster information
+
+``` shell
+ MySQL  127.0.0.1:4000  mynewdatabase  SQL > select * from information_schema.cluster_info\G
+
+*************************** 1. row ***************************
+          TYPE: tidb
+      INSTANCE: basic-tidb-0.basic-tidb-peer.tidb-cluster.svc:4000
+STATUS_ADDRESS: basic-tidb-0.basic-tidb-peer.tidb-cluster.svc:10080
+       VERSION: 5.1.0
+      GIT_HASH: 8acd5c88471cb7b4d4c4a8ed73b4d53d6833f13e
+    START_TIME: 2021-08-07T12:37:48Z
+        UPTIME: 21h58m51.42808021s
+     SERVER_ID: 0
+*************************** 2. row ***************************
+          TYPE: pd
+      INSTANCE: basic-pd-0.basic-pd-peer.tidb-cluster.svc:2379
+STATUS_ADDRESS: basic-pd-0.basic-pd-peer.tidb-cluster.svc:2379
+       VERSION: 5.1.0
+      GIT_HASH: 8bc9675a923f81f79d8a566e208c8afdcf4ea3f3
+    START_TIME: 2021-08-07T12:37:08Z
+        UPTIME: 21h59m31.428137544s
+     SERVER_ID: 0
+*************************** 3. row ***************************
+          TYPE: tikv
+      INSTANCE: basic-tikv-0.basic-tikv-peer.tidb-cluster.svc:20160
+STATUS_ADDRESS: basic-tikv-0.basic-tikv-peer.tidb-cluster.svc:20180
+       VERSION: 5.1.0
+```
+
+## Access Grafana dashboard
+
+``` shell
+kubectl port-forward -n tidb-cluster svc/basic-grafana 3000 > pf3000.out &
+```
+
+
+You can access Grafana dashboard at http://localhost:3000 on the host where you run kubectl. Note that if you are not running kubectl on the same host (for example, in a Docker container or on a remote host), you cannot access Grafana dashboard at http://localhost:3000 from your browser.
+
+
+# REF
+
+https://docs.pingcap.com/tidb-in-kubernetes/dev/get-started#deploy-tidb-operator
