@@ -46,6 +46,16 @@ docker network create -d macvlan \
   macvlan100
 ```
 
+> macos bigsur should use this command.
+``` shell
+docker network create -d macvlan \
+  --subnet=192.168.191.0/24 \
+  --ip-range=192.168.191.0/25 \
+  --gateway=192.168.191.1 \
+  -o parent=en0.10 \
+  macvlan100
+```
+
 This will create the “macvlan100” network and the eth0.100 sub-interface. The config now looks like this.
 ![](vlan2.png)
 
@@ -78,3 +88,24 @@ Moreover, our platform doesn’t support promiscuous mode, so the commands in th
 At this point, we’ve got a MACVLAN network and used it to connect a new container to an existing VLAN. However, it doesn’t stop there. The Docker MACVLAN driver is built on top of the tried-and-tested Linux kernel driver with the same name. As such, it supports VLAN trunking. This means we can create multiple MACVLAN networks and connect containers on the same Docker host to them as shown below.
 
 ![](vlan4.png)
+
+
+
+
+## terminology
+
+promiscuous
+In a network, promiscuous mode allows a network device to intercept and read each network packet that arrives in its entirety. This mode of operation is sometimes given to a network snoop server that captures and saves all packets for analysis (for example, for monitoring network usage).
+
+
+## Note
+
+due to the Linux ( which is running on the public cloud) and Macos bigsur . I did not run this example successfully 
+https://docs.docker.com/docker-for-mac/networking/
+
+
+https://goyalankit.com/blog/promiscuous-mode-detection
+
+https://docs.docker.com/network/macvlan/
+
+https://docs.docker.com/network/network-tutorial-macvlan/

@@ -85,3 +85,8 @@ $ docker logs vantage-db
 ```
 
 There’s a good chance you’ll find network connectivity errors reported in the daemon logs or container logs.
+
+
+## ref
+
+https://docs.docker.com/config/daemon/#read-the-logs

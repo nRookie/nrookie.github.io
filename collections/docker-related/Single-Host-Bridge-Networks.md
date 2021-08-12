@@ -266,3 +266,29 @@ lo        Link encap:Local Loopback
 FVFF87EFQ6LR :: ~ » 
 
 ```
+
+
+
+When Swarm starts a container on an overlay network, it automatically extends that network to the node the container is running on. This means that the uber-net network is now visible on node2.
+
+``` shell
+
+[root@10-13-175-37 ~]# docker network ls
+NETWORK ID     NAME              DRIVER    SCOPE
+be58ad34c4f2   bridge            bridge    local
+433dbce26e5a   docker_gwbridge   bridge    local
+ccb8a6d5ae5e   host              host      local
+weymwxn6r4g5   ingress           overlay   swarm
+266bd93eac1c   none              null      local
+2eovlux4gauc   uber-net          overlay   swarm
+
+```
+
+## What about standalone containers? 
+
+
+Standalone containers that are not part of a swarm service cannot attach to overlay networks unless they have the attachable=true property. The following command can be used to create an attachable overlay network that standalone containers can also attach to.
+
+``` shell
+docker network create -d overlay --attachable uber-net
+```
