@@ -47,3 +47,10 @@ for k, v := range m {
 ```
 
 https://github.com/golang/go/wiki/InterfaceSlice
+
+
+```
+
+Remark: Use Unmarshal to deserialize a short text you already have in memory (e.g., some user input) and NewDecoder when you are reading from a stream (e.g., from a file).
+
+```
