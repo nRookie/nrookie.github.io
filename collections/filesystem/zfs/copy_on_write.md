@@ -90,3 +90,4 @@ The promote function, for instance, will be required to execute when a volume cl
 
 ## Cloning notes
 
+The copy-one-write mechanism and snapshots together with clones included in ZFS offer unique capabilities that other file systems do not possess. Enhanced write mechanism that protects your data from being corrupted is solid protection against power losses or other harmful events. There is also a possiblity to undo certain changes and restore, for example, the previous version by using the snapshot's functionality. A clone 
