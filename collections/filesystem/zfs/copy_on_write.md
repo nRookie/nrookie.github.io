@@ -88,6 +88,17 @@ ZFS also allows you to replace an existing volume with its clone if you were usi
 
 The promote function, for instance, will be required to execute when a volume clone was created and assigned to production as a result of instant recovery from a snapshot of a production volume which has been destroyed. Then, to clean up, we need to remove the original destroyed volume but first, it must be replaced with the (working) clone.
 
-## Cloning notes
 
-The copy-one-write mechanism and snapshots together with clones included in ZFS offer unique capabilities that other file systems do not possess. Enhanced write mechanism that protects your data from being corrupted is solid protection against power losses or other harmful events. There is also a possiblity to undo certain changes and restore, for example, the previous version by using the snapshot's functionality. A clone 
+
+CoW-COpy on Write- is a fundamental underpinning beneath most of what makes ZFS awesome. The basic concept is simple -- If you ask a traditional filesystem to modify a file in-place, it does precisely what you asked it to. If you ask a copy on-write filesystem to do the same thing, it says "okay" -- but its lying to you.
+
+Instead, the copy-on-write filesystem writes out a new version of the block you modified, then updates the file's metadata to unlink the old block, and link the new block you just wrote.
+
+Unlinking the old block and linking in the new is acoomplished in a single operation, so it can't be interrupted -- if you dump the power after it happens, you have the new version of the file, and if you dump power before, then you have the old version. You're always filesystem-conistent, either way.
+
+
+
+
+## ref
+
+https://arstechnica.com/information-technology/2020/05/zfs-101-understanding-zfs-storage-and-performance/3/
