@@ -15,3 +15,42 @@ slurmctld need not to execute as user root. In fact , it is recommended that a u
 configurations.
 
 3. Job Manager: Accepts user job requests and places pending jobs in a priority- ordered queue. The Job Manager is awakened on a periodic basis and when- ever there is a change in state that might permit a job to begin running, such as job completion, job submission, partition up transition, node up transition, etc. The Job Manager then makes a pass through the priority-ordered job queue. The highest priority jobs for each partition are allocated resources as possible. As soon as an allocation failure occurs for any partition, no lower-priority jobs for that partition are considered for initiation. After completing the schedul- ing cycle, the Job Manager’s scheduling thread sleeps. Once a job has been allocated resources, the Job Manager transfers necessary state information to those nodes, permitting it to commence execution. When the Job Manager detects that all nodes associated with a job have completed their work, it initiates cleanup and performs another scheduling cycle as described above.
+
+
+
+## codes for common node states
+
+
+
+- allocated
+
+- Down
+
+- Draining
+
+
+- IDLE
+
+- MAINT
+
+- MIXED
+
+
+- RESERVED
+
+
+
+## change slurm name through scontrol cause confusion
+
+```
+slurmctld has been started with "ClusterName=epc_cluster_1", but read "epc-cluster-1" from the state files in StateSaveLocation.
+Running multiple clusters from a shared StateSaveLocation WILL CAUSE CORRUPTION.
+Remove /var/spool/slurmd/clustername to override this safety check if this is intentional (e.g., the ClusterName has changed).
+
+
+```
+
+
+
+## jobs stuck at CG status
+
