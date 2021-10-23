@@ -36,3 +36,9 @@ the extern keyword is used to extend the visibility of variables/functions.
 Since functions are visible throughout the program by default, the use of extern is not needed in function declarations or definitions. Its use is implicit.
 When extern is used with a variable, it’s only declared, not defined.
 As an exception, when an extern variable is declared with initialization, it is taken as the definition of the variable as well.
+
+
+
+## char * char[] difference
+
+https://www.geeksforgeeks.org/whats-difference-between-char-s-and-char-s-in-c/

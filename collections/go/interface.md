@@ -40,3 +40,6 @@ The principles outlined above are applied throughout all Go-packages, thus maxim
 
 Useful interfaces can be detected when the development is already underway. It is easy to add new interfaces because existing types don’t have to change (they only have to implement their methods). Current functions can then be generalized from having a parameter(s) of a constrained type to a parameter of the interface type: often, only the signature of the function needs to be changed. Contrast this to class-based OO-languages, where, in such a case, the design of the whole class-hierarchy has to be adapted.
 
+
+
+https://grpc-ecosystem.github.io/grpc-gateway/docs/tutorials/adding_annotations/
