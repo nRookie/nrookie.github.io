@@ -28,3 +28,8 @@ info args
 info variables
 info locals
 ```
+
+
+5. finish
+
+ Continue running until just after function in the selected stack frame returns. Print the returned value (if any). This command can be abbreviated as fin.

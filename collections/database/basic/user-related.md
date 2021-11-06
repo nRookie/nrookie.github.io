@@ -1,13 +1,13 @@
 ## add a new user
 
 ``` sql
-CREATE USER 'ucloud'@'localhost' IDENTIFIED BY 'ucloud-123';
+CREATE USER 'ok'@'localhost' IDENTIFIED BY 'bad-123';
 ```
 
 
 ### grant permission
 ``` sql
-GRANT ALL PRIVILEGES ON * . * TO 'ucloud'@'localhost';
+GRANT ALL PRIVILEGES ON * . * TO 'ok'@'localhost';
 ```
 
 ``` sql

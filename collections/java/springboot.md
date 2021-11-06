@@ -96,3 +96,45 @@ Let's define a class to abstract out the contact person details:
 The JPA annotation @Embedded is used to embed a type into another entity.
 
 Let's next modify our Company class. We'll add the JPA annotations and we'll also change to use ContactPerson instead of separate fields:
+
+
+
+5. @Scheduled
+
+the Spring @Scheduled annotation can be used to configure and schedule tasks.
+
+The simple rules that we need to follow to annotate a method with @Scheduled are:
+
+the method should typically have a void return type (if not, the returned value will be ignored)
+the method should not expect any parameters
+
+
+6.  @Transactional
+
+https://www.baeldung.com/transaction-configuration-with-jpa-and-spring
+
+However, if we're using a Spring Boot project and have a spring-data-* or spring-tx dependencies on the classpath, then transaction management will be enabled by default.
+
+
+
+7. @EnableZuulProxy
+
+Routing is an integral part of a microservice architecture. For example, / may be mapped to your web application, /api/users is mapped to the user service and /api/shop is mapped to the shop service. Zuul is a JVM-based router and server-side load balancer from Netflix.
+
+Netflix uses Zuul for the following:
+
+Authentication
+Insights
+Stress Testing
+Canary Testing
+Dynamic Routing
+Service Migration
+Load Shedding
+Security
+Static Response handling
+Active/Active traffic management
+
+
+8. @EnableEurekaServer
+
+
