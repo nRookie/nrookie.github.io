@@ -31,3 +31,12 @@ get-wmiobject win32_mappedlogicaldisk | select-object deviceid,providername,free
 ```
 
 https://www.techotopia.com/index.php/Working_with_File_Systems_in_Windows_PowerShell_1.0
+
+
+## search file
+
+
+``` powershell
+
+Get-Childitem –Path C:\ -Include *what* -Recurse -ErrorAction SilentlyContinue
+```
