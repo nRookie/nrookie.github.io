@@ -319,3 +319,51 @@ https://www.youtube.com/watch?v=LLJ_a8hS1GU
 
 
 
+
+
+
+
+
+
+# Environment settings
+
+
+
+https://docs.fedoraproject.org/en-US/packaging-guidelines/EnvironmentModules/
+
+
+
+``` shell
+
+
+\#%Module1.0#####################################################################
+
+\##
+
+\## null modulefile
+
+\##
+
+\## modulefiles/null. Generated from null.in by configure.
+
+\##
+
+
+
+\# for Tcl script use only
+
+set       root          /nfs1/opt/openmpi/3.0.3
+
+prepend-path  PATH          $root/bin
+
+prepend-path  LD_LIBRARY_PATH     $root/lib
+
+prepend-path  MANPATH         $root/share/man
+
+setenv     MPI_SYSCONFIG      $root/etc
+
+setenv     MPI_INCLUDE       $root/include
+
+setenv     MPI_LIB         $root/lib
+```
+
