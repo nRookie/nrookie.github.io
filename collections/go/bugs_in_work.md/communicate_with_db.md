@@ -1,0 +1,4 @@
+red_storage_recyles` (`long_id`, `short_id`, `host_id`, `host_company_id`, `host_organization_id`, `fsx_company_id`, `fsx_organization_id`, `volume_type`, `create_time`, `modify_time`, `delete_time`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) args=[759c8e3c-4b84-4c18-a769-3a4203ceb17b ufssmb-sibob1jw invisible_uhost_ufssmb-ctoazfrx 0 0 65850691 63864299 10 1641378689 1641378689 1641378689]
+INFO ts=2022-01-05T18:31:29+08:00 caller=data.go:39 service.id=FVFF87EFQ6LR.local service.name= service.version= trace_id= span_id= msg=Tx(c2a03c79-72c1-4e8b-8ef9-2b858c7fcb06): rollbacked
+ERROR ts=2022-01-05T18:31:29+08:00 caller=sharedstoragerecycle.go:40 service.id=FVFF87EFQ6LR.local service.name= service.version= trace_id= span_id= msg=err : insert node to table "shared_storage_recyles": context deadline exceeded: sql: transaction has already been committed or rolled back
+

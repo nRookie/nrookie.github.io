@@ -1,0 +1,79 @@
+# Copyright 2018 frost.chen@whatever.cn
+
+##################################################################################################
+# Hello World service
+##################################################################################################
+apiVersion: v1
+kind: Service
+metadata:
+  name: helloworld
+  namespace: smhtest
+  labels:
+    app: helloworld
+spec:
+  ports:
+  - port: 12345
+    name: http-helloworld
+  selector:
+    app: helloworld
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: helloworld
+  namespace: smhtest
+spec:
+  replicas: 1 
+  template:
+    metadata:
+      labels:
+        app: helloworld
+        version: basic
+    spec:
+      containers:
+      - name: helloworld
+        image: whateverhub.service.whatever.cn/wxyz/istio-example-helloworld:basic
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 12345
+          name: http-helloworld
+
+##################################################################################################
+# Api-Gateway service
+##################################################################################################
+#
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: apigateway
+  namespace: smhtest
+  labels:
+    app: apigateway
+spec:
+  ports:
+  - port: 12344
+    name: http-apigateway
+  selector:
+    app: apigateway
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: apigateway
+  namespace: smhtest
+spec:
+  replicas: 1 
+  template:
+    metadata:
+      labels:
+        app: apigateway
+        version: basic
+    spec:
+      containers:
+      - name: apigateway
+        image: whateverhub.service.whatever.cn/wxyz/istio-example-apigateway:basic
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 12344
+          name: http-apigateway
