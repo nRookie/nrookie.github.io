@@ -5,7 +5,7 @@ import (
 	"sync"
 )
 
-func gen(nums ...int) <-chan int {
+func gen1(nums ...int) <-chan int {
 	out := make(chan int)
 	go func() {
 		for _, n := range nums {
@@ -15,6 +15,45 @@ func gen(nums ...int) <-chan int {
 	}()
 	return out
 }
+
+func gen(nums ...int) <-chan int {
+	var wg sync.WaitGroup
+	out := make(chan int, 1)
+
+	// Start an output goroutine for each input channel in cs. output
+	// copies values from c to out until c is closed, then calls wg.Done.
+
+	output := func(c <-chan int) {
+		for n := range c {
+			out <- n 
+		}
+		wg.Done()
+	}
+
+	wg.Add(len(cs))
+	for _, c := range cs {
+		fmt.Println("start a new output routine")
+		go output(c) 
+	}
+
+	// Start a go routine to close out once all the output goroutines are done.
+	// This must start after the wg.Add call.
+
+	go func() {
+		wg.Wait()
+		close(out)
+	}() 
+	return out
+}
+
+func merge(nums ...int) <-chan int {
+	out := make(chan int, len(nums))
+	for _, n := range nums {
+		out <- n
+	}
+	close(out)
+	return out
+} 
 
 func sq(in <-chan int) <-chan int {
 	out := make(chan int)
@@ -36,7 +75,7 @@ func sq(in <-chan int) <-chan int {
 // }
 
 
-func merge(cs ... <-chan int) <-chan int {
+func merge1(cs ... <-chan int) <-chan int {
 	var wg sync.WaitGroup
 	out := make(chan int)
 
