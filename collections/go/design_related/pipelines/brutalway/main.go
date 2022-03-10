@@ -5,62 +5,27 @@ import (
 	"sync"
 )
 
-func gen1(nums ...int) <-chan int {
+func gen(nums ...int) <-chan int {
 	out := make(chan int)
 	go func() {
 		for _, n := range nums {
+			fmt.Printf("gen send %d \n", n )
 			out <- n
-		}
+		}		
+		fmt.Printf("close out gen\n")
 		close(out)
 	}()
 	return out
 }
 
-func gen(nums ...int) <-chan int {
-	var wg sync.WaitGroup
-	out := make(chan int, 1)
-
-	// Start an output goroutine for each input channel in cs. output
-	// copies values from c to out until c is closed, then calls wg.Done.
-
-	output := func(c <-chan int) {
-		for n := range c {
-			out <- n 
-		}
-		wg.Done()
-	}
-
-	wg.Add(len(cs))
-	for _, c := range cs {
-		fmt.Println("start a new output routine")
-		go output(c) 
-	}
-
-	// Start a go routine to close out once all the output goroutines are done.
-	// This must start after the wg.Add call.
-
-	go func() {
-		wg.Wait()
-		close(out)
-	}() 
-	return out
-}
-
-func merge(nums ...int) <-chan int {
-	out := make(chan int, len(nums))
-	for _, n := range nums {
-		out <- n
-	}
-	close(out)
-	return out
-} 
-
 func sq(in <-chan int) <-chan int {
 	out := make(chan int)
 	go func() {
 		for n := range in {
+			fmt.Printf("sq send %d \n", n *n)
 			out <- n * n
 		}
+		fmt.Printf("close out sq\n")
 		close(out)
 	}()
 		return out
@@ -75,15 +40,16 @@ func sq(in <-chan int) <-chan int {
 // }
 
 
-func merge1(cs ... <-chan int) <-chan int {
+func merge(cs ... <-chan int) <-chan int {
 	var wg sync.WaitGroup
-	out := make(chan int)
+	out := make(chan int, 4)
 
 	// Start an output goroutine for each input channel in cs. output
 	// copies values from c to out until c is closed, then calls wg.Done.
 
 	output := func(c <-chan int) {
 		for n := range c {
+			fmt.Printf("merge recv: %d\n", n)
 			out <- n 
 		}
 		wg.Done()
@@ -91,7 +57,7 @@ func merge1(cs ... <-chan int) <-chan int {
 
 	wg.Add(len(cs))
 	for _, c := range cs {
-		fmt.Println("start a new output routine")
+		fmt.Printf("start a new output routine %d \n", c)
 		go output(c) 
 	}
 
@@ -107,19 +73,19 @@ func merge1(cs ... <-chan int) <-chan int {
 }
 func main() {
 	in := gen(2, 3, 4, 5)
-
 	// Distribute the sq work across two goroutines that both read from in.
 	c1 := sq(in)
-	c2 := sq(in)
-	c3 := sq(in)
-	// Consume the merged output from c1 and c2.
+	// // Consume the merged output from c1 and c2.
+	// for n := range merge(c1, c2) {
+	// 	fmt.Println(n) // 4 then 9, or 9 then 4.
+	// }
 
-	for n := range merge(c1, c2) {
-		fmt.Println(n) // 4 then 9, or 9 then 4.
-	}
+	out := merge(c1)
+    //fmt.Println(<-out) // 4 or 9
 
-	for b := range c3 {
-		fmt.Println(b)
-		fmt.Println("ok")
+	for i := range out {
+		fmt.Printf("range value %d\n", i)
 	}
+    return
+
 }
