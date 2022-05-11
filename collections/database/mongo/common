@@ -1,0 +1,185 @@
+``` shell
+use db
+
+
+show collections
+
+
+## count 
+db.collection.find({"key" : 27473, "purpose" : "key", "deleted" : 0 }).count()
+
+Object.keys(db.collection.findOne({"key" : 27473, "key" : "EDUEIP", "key" : 0 }))
+
+## search in sub document
+db.EpcUHostInstances.find( { "deleted":  0, "instances" : {$elemMatch: {"short_id": "epc-14urbbxz"} } })
+
+
+## specific field
+db.EpcUHostInstances.find({"top_org_id" : 27473, "purpose" : "EDUEIP", "deleted" : 0 }, { instances: 1}).pretty()
+```
+
+
+
+
+
+### mongo 2.6 docs
+
+
+
+https://www.mongodb.com/docs/v2.6/tutorial/remove-documents/
+
+
+
+``` mongo
+db.tasks.aggregate([ {$project: {name: 1, num :  {$cond: { if: { $isArray: "$num" }, then: { $size: "$num" }, else: "NA"} } } }] )
+```
+
+
+
+``` mongo
+db.EpcUHostInstances.aggregate([ {$project: {	"org_id" : 1, instances :  {$cond: { if: { $isArray: "$instanecs" }, then: { $size: "$instances" }, else: "NA"} } } }] )
+```
+
+
+
+``` shell
+ db.EpcUHostInstances.aggregate([
+    {
+    $match: { org_id: 63864485 }
+    },   
+    {
+    $group: {
+        _id: "org_id",
+        total: { $sum: { $size: "$instances"} }
+             }
+    }])
+```
+
+
+
+``` shell
+db.EpcUHostInstances.findOne({"org_id": 63864485})
+```
+
+
+
+// get sound of instances
+
+``` shell
+ db.EpcUHostInstances.aggregate([
+    {
+    $match: { "top_org_id" : 56028911 }
+    },   
+    {
+    $group: {
+        _id: "org_id",
+        total: { $sum: { $size: "$instances"} }
+             }
+    }])
+
+
+ db.EpcUHostInstances.aggregate([
+    {
+    $match: { "top_org_id" : 27473, "purpose": "EDUEIP" }
+    },   
+    {
+    $group: {
+        _id: "org_id",
+        total: { $sum: { $size: "$instances"} }
+             }
+    }])
+```
+
+
+
+``` shell
+db.EpcUHostInstances.findOne({ $and: [ {"org_id": 63864485, }, {"top_org_id" : 56028911,} ]});
+```
+
+
+
+
+
+``` shell
+db.EpcUHostInstances.aggregate([
+    {
+    $group: {
+        "ord_id": "org_id",
+        total: { $sum: { $size: "$instances"} }
+             }
+    }])
+```
+
+
+
+
+
+``` shell
+db.tasks.updateOne({
+  name: "Learn MongoDB old"
+}, 
+{
+  $unset: {
+      status: "",
+}
+});
+```
+
+
+
+``` shell
+db.EpcUHostInstances.find(
+{ 
+   "org_id": 63864485, 
+   "purpose": "Create", 
+   "instances" : { 
+       $elemMatch: { "short_id":"epc-ab3ymsql"}
+   }
+}).pretty()
+```
+
+
+
+
+
+``` shell
+db.EpcUHostInstances.update({
+        "purpose": "EDUEIP",
+        "instances": {$elemMatch: {"short_id": "epc-hqbq05d5"}}
+        }, {
+        $pull: {"instances": {
+        	"short_id" :  "epc-hqbq05d5",
+        	"deleted" : 0,
+        }},
+    })
+```
+
+
+
+``` shell
+db.EpcUHostInstances.update({
+        "purpose": "Create",
+        "instances": {$elemMatch: {"short_id": "epc-2ssd0fdd"}}
+        }, {
+        $pull: {"instances": {
+        	"short_id" :  "epc-2ssd0fdd",
+        	"deleted" : 0,
+        }},
+    })
+```
+
+
+
+
+
+``` shell
+db.EpcUHostInstances.find({"top_org_id" : 27473, "purpose" : "EDUEIP", "deleted" : 0 }, { "top_org_id": 1 , "purpose": 1, "org_id" : 1}).pretty()
+```
+
+
+
+
+
+```
+db.EpcUHostInstances.remove({ $and: [ {``"org_id"``: ``63864485``, }, {``"top_org_id"` `: ``56028911``,} ]});
+```

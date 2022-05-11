@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <title>Prometheus Time Series Collection and Processing Server</title>
+
+  <link rel="shortcut icon" href="/prometheus/static/img/favicon.ico?v=0a74f98628a0463dddc90528220c94de5032d1a0">
+
+    <script src="/prometheus/static/vendor/js/jquery.min.js?v=0a74f98628a0463dddc90528220c94de5032d1a0"></script>
+
+    <script src="/prometheus/static/vendor/bootstrap-3.3.1/js/bootstrap.min.js?v=0a74f98628a0463dddc90528220c94de5032d1a0"></script>
+
+
+
+  <link type="text/css" rel="stylesheet" href="/prometheus/static/vendor/bootstrap-3.3.1/css/bootstrap.min.css?v=0a74f98628a0463dddc90528220c94de5032d1a0">
+
+  <link type="text/css" rel="stylesheet" href="/prometheus/static/css/prometheus.css?v=0a74f98628a0463dddc90528220c94de5032d1a0">
+
+
+
+    <script>
+
+   var PATH_PREFIX = "\/prometheus";
+
+   var BUILD_VERSION = "0a74f98628a0463dddc90528220c94de5032d1a0";
+
+   $(function () {
+
+​    $('[data-toggle="tooltip"]').tooltip()
+
+   })
+
+  </script>
+
+
+
+   
+
+<link type="text/css" rel="stylesheet" href="/prometheus/static/css/targets.css?v=0a74f98628a0463dddc90528220c94de5032d1a0">
+
+<script src="/prometheus/static/js/targets.js?v=0a74f98628a0463dddc90528220c94de5032d1a0"></script>
+
+
+
+ </head>
+
+
+
+ <body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+
+​     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+​      <span class="sr-only">Toggle navigation</span>
+
+​      <span class="icon-bar"></span>
+
+​      <span class="icon-bar"></span>
+
+​      <span class="icon-bar"></span>
+
+​     </button>
+
+​          <a class="navbar-brand" href="/prometheus/">Prometheus</a>
+
+​    </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+
+​     <ul class="nav navbar-nav navbar-left">
+
+​       
+
+​       
+
+​      <li><a href="/prometheus/alerts">Alerts</a></li>
+
+​      <li><a href="/prometheus/graph">Graph</a></li>
+
+​      <li class="dropdown">
+
+​              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Status <span class="caret"></span></a>
+
+​       <ul class="dropdown-menu">
+
+​        <li><a href="/prometheus/status">Runtime &amp; Build Information</a></li>
+
+​        <li><a href="/prometheus/flags">Command-Line Flags</a></li>
+
+​        <li><a href="/prometheus/config">Configuration</a></li>
+
+​        <li><a href="/prometheus/rules">Rules</a></li>
+
+​        <li><a href="/prometheus/targets">Targets</a></li>
+
+​       </ul>
+
+​      </li>
+
+​      <li>
+
+​              <a href="https://prometheus.io/docs" target="_blank">Help</a>
+
+​      </li>
+
+​     </ul>
+
+​    </div>
+
+   </div>
+
+  </nav>
+
+
+
+   
+
+  <div class="container-fluid">
+
+  <h2 id="targets">Targets</h2>
+
+      <table class="table table-condensed table-bordered table-hover">
+
+​     
+
+​      
+
+​      
+
+​      <tr class="job_header danger">
+
+​       <td colspan="5">
+
+​        <i class="icon-chevron-up"></i><a id="job-prometheus" href="#job-prometheus">prometheus (0/1 up)</a>
+
+​       </td>
+
+​      </tr>
+
+​      <tr class="job_details">
+
+​       <td>
+
+                <table class="table table-condensed table-bordered table-striped table-hover">
+
+​         <thead>
+
+​          <tr>
+
+​           <th>Endpoint</th>
+
+​           <th>State</th>
+
+​           <th>Labels</th>
+
+​           <th>Last Scrape</th>
+
+​           <th>Error</th>
+
+​          </tr>
+
+​         </thead>
+
+​         <tbody>
+
+​          
+
+​          <tr>
+
+​           <td>
+
+​                        <a href="http://10.104.194.180/metrics">http://localhost:9090/metrics</a><br>
+
+​             
+
+​           </td>
+
+​           <td>
+
+​            <span class="alert alert-danger state_indicator text-uppercase">
+
+​             down
+
+​            </span>
+
+​           </td>
+
+​           <td>
+
+​            <span class="cursor-pointer" data-toggle="tooltip" title="" data-html=true data-original-title="<b>Before relabeling:</b><br>0=&quot;{__address__ localhost:9090}&quot;<br>1=&quot;{__metrics_path__ /metrics}&quot;<br>2=&quot;{__scheme__ http}&quot;<br>3=&quot;{job prometheus}&quot;">
+
+​              
+
+​              
+
+​              <span class="label label-primary">instance="localhost:9090"</span>
+
+​              
+
+​            </span>
+
+​           </td>
+
+​           <td>
+
+​            3.774s ago
+
+​           </td>
+
+​           <td>
+
+​             
+
+​            <span class="alert alert-danger state_indicator">server returned HTTP status 404 Not Found</span>
+
+​             
+
+​           </td>
+
+​          </tr>
+
+​          
+
+​         </tbody>
+
+​        </table>
+
+​       </td>
+
+​      </tr>
+
+​     
+
+   </table>
+
+ </div>
+
+
+
+ </body>
+
+</html>

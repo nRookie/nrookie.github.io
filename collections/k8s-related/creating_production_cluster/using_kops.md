@@ -58,7 +58,7 @@ aws iam list-users
  kops get -o yaml 
 
  kops edit ig --name $NAME nodes-us-east-2a
- ```
+```
 
 ### kops cannot update 
 
@@ -82,7 +82,7 @@ main.Execute()
 	/private/tmp/kops-20211014-83785-llh589/kops-1.22.0/src/k8s.io/kops/cmd/kops/root.go:95 +0x90
 main.main()
 	/private/tmp/kops-20211014-83785-llh589/kops-1.22.0/src/k8s.io/kops/cmd/kops/main.go:20 +0x20
-  ```
+```
 
 
 

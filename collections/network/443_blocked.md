@@ -21,3 +21,12 @@ https://zhuanlan.zhihu.com/p/124199138
 
 设置DNS为114.114.114.114或者8.8.8.8就好了。
 
+
+
+
+
+## https://v2ray.com/developer/intro/compile.html
+
+
+
+https://www.v2ray.com/en/configuration/protocols/http.html

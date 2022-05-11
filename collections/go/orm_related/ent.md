@@ -84,3 +84,19 @@ alter table t_fsx modify column f_sx_access_info longtext;
 alter table t_host modify column network longtext;
 ```
 
+
+
+
+
+
+
+### Ent 
+
+
+
+``` shell
+
+ent init User
+ent generate ./ent/schema
+```
+

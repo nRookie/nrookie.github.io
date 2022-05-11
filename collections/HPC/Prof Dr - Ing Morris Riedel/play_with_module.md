@@ -15,13 +15,15 @@ https://modules.readthedocs.io/en/stable/INSTALL.html
 3. ``` shell
    ln -s /nfs1/opt/modules-5.0.1/init/profile.sh  /etc/profile.d/modules.sh
    ln -s /nfs1/opt/modules-5.0.1/init/profile.csh   /etc/profile.d/modules.csh
+   
+   source PREFIX/init/bash
     
    [root@primary ~]# module --version
    Modules Release 5.0.1 (2021-10-16)
    [root@node1 opt]# module avail
    [root@node1 opt]# 
    ```
-
+   
 4. download gcc
 
    ![image-20211127182303431](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211127182303431.png)
