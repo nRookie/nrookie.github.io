@@ -28,7 +28,7 @@ The following image shows the levels of architectural abstraction:
 
 
 
-![image-20220509173206778](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220509173206778.png)
+![image-20220509173206778](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220509173206778.png)
 
 
 
@@ -40,11 +40,11 @@ At the top level, which is the most abstract representation of software, there i
 
 
 
-Hexagonal architecture, also known as ports and adapters architecture, is an architectural pattern that separates the business logic from the outside world. It involves APIs exposure or database integration. To understand whether this pattern is well implemented or not,  one could ask themselves questions such as: What would happen if functionality was exposed through another protocol? Or what would happen if the database was changed? If the business logic was required to change too, then this would imply that the hexagonal architecture was poorly implemented. If not, then the pattern is proven to be implemented well. 
+Hexagonal architecture, also known as ports and adapters architecture, is an architectural pattern that separates the business logic from the outside world. It involves APIs exposure or database integration. To understand whether this pattern is well implemented or not,  one could ask themselves questions such as: What would happen if functionality was exposed through another protocol? Or what would happen if the database was changed? If the business logic was required to change too, then this would imply that the hexagonal architecture was poorly implemented. If not, then the pattern is proven to be implemented well.
 
 
 
-![image-20220509173636707](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220509173636707.png)
+![image-20220509173636707](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220509173636707.png)
 
 
 

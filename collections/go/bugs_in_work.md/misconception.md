@@ -38,9 +38,9 @@ panic: send on closed channel
 
 
 
-![image-20220314230340231](/Users/user/playground/share/nrookie.github.io/collections/go/bugs_in_work.md/image-20220314230340231.png)
+![image-20220314230340231](/Users/kestrel/developer/nrookie.github.io/collections/go/bugs_in_work.md/image-20220314230340231.png)
 
-![image-20220314235812104](/Users/user/playground/share/nrookie.github.io/collections/go/bugs_in_work.md/image-20220314235812104.png)
+![image-20220314235812104](/Users/kestrel/developer/nrookie.github.io/collections/go/bugs_in_work.md/image-20220314235812104.png)
 
 
 
@@ -61,13 +61,13 @@ package main
 import "time"
 
 type Node struct {
-	Data int 
+	Data int
 	Sleep time.Duration
 	Left *Node
 	Right *Node
 }
 
-var treeTraversal []int 
+var treeTraversal []int
 
 func (n *Node) TreeTraversalS() {
 
@@ -87,15 +87,15 @@ func (n *Node) TreeTraversalS() {
 Concurrent
 
 ``` golang
-var wg sync.WaitGroup 
+var wg sync.WaitGroup
 
 func (n *Node) ProcessNodeParallel() {
 
 	defer wg.Done()
-    
+
 	for i := 0; i < 10000; i++ {
 		time.Sleep(n.Sleep)
-		
+
 	}
     treeTraversal = append(treeTraversal, n.Data)
 
@@ -103,7 +103,7 @@ func (n *Node) ProcessNodeParallel() {
 
 
 func (n *Node) TreeTraversalParallel() {
-	
+
 	defer wg.Done()
 
 	if n == nil {
@@ -114,7 +114,7 @@ func (n *Node) TreeTraversalParallel() {
 		wg.Add(1)
 		n.Left.TreeTraversalParallel()
 	}()
-	
+
 	wg.Add(1)
 	n.ProcessNodeParallel()
 	go func()	 {

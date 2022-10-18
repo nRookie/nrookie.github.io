@@ -11,7 +11,7 @@ The benefits of hexagonal architecture are as follows:
 - Hexagonal architecture has a well-defined dependency structure, which results in a clear domain model implementation.
 - It emphasizes the domain logic, which is a good match within a DDD context.
 - It clearly defines what to put in the code and where. That definition is important to maintain the code. It helps in faster, more focused, and automated tests for domain logic, mocking databases, and other external services.
-- ![image-20220510183625731](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510183625731.png)
+- ![image-20220510183625731](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510183625731.png)
 - An independent and incremental evolution of concerns is possible with hexagonal architecture. This means that every layer can evolve independently.
 - It allows the domain model to evolve to fulfill business requirements, without breaking APIs or migrating a database on every refactoring.
 
@@ -28,7 +28,7 @@ The benefits of hexagonal architecture are as follows:
 - Complexity may increase, since applications are built with different levels of abstraction.
 - Performance may be affected, as a request must pass through different layers and it may imply more classes than the usual.
 
-![image-20220510183857725](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510183857725.png)
+![image-20220510183857725](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510183857725.png)
 
 - Hexagonal architecture will overcomplicate a project if changing the database regularly or exposing functionality through different protocols is not a requirement.
 
@@ -42,18 +42,18 @@ To take advantage of hexagonal architecture, it is important to know that it giv
 
 
 
-![image-20220510184007302](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510184007302.png)
+![image-20220510184007302](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510184007302.png)
 
-![image-20220510184034765](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510184034765.png)
-
-
-
-
-
-![image-20220510184104169](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510184104169.png)
+![image-20220510184034765](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510184034765.png)
 
 
 
 
 
-![image-20220510184142213](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510184142213.png)
+![image-20220510184104169](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510184104169.png)
+
+
+
+
+
+![image-20220510184142213](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510184142213.png)

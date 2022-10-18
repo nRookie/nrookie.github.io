@@ -2,15 +2,15 @@
 kubectl apply \
     -f scaling/go-demo-5-no-sidecar-mem.yml \
     --record
-    
-    
+
+
 unable to recognize "scaling/go-demo-5-no-sidecar-mem.yml": no matches for kind "Role" in version "rbac.authorization.k8s.io/v1beta1"
 unable to recognize "scaling/go-demo-5-no-sidecar-mem.yml": no matches for kind "RoleBinding" in version "rbac.authorization.k8s.io/v1beta1"
 ```
 
 
 
-## Enabling or disabling API groups 
+## Enabling or disabling API groups
 
 Certain resources and API groups are enabled by default. You can enable or disable them by setting `--runtime-config` on the API server. The `--runtime-config` flag accepts comma separated `<key>[=<value>]` pairs describing the runtime configuration of the API server. If the `=<value>` part is omitted, it is treated as if `=true` is specified. For example:
 
@@ -29,7 +29,7 @@ And then restart kubelet: systemctl restart kubelet
 
 ### in here we change the rbac version from v1beta1 to v1
 
- vi scaling/go-demo-5-no-sidecar-mem.yml 
+ vi scaling/go-demo-5-no-sidecar-mem.yml
 
 ``` yaml
 [root@10-23-75-240 k8s-specs]# kubectl apply     -f scaling/go-demo-5-no-sidecar-mem.yml     --record
@@ -52,7 +52,7 @@ service/api unchanged
 
 
 ``` yaml
-[root@10-23-75-240 k8s-specs]# cat pv/mongo-nfs-pv.yml 
+[root@10-23-75-240 k8s-specs]# cat pv/mongo-nfs-pv.yml
 apiVersion: v1
 kind: PersistentVolume
 metadata:
@@ -81,7 +81,7 @@ spec:
 
 
 ``` shell
-[root@10-23-75-240 k8s-specs]# cat pv/mongo-nfs-pvc.yml 
+[root@10-23-75-240 k8s-specs]# cat pv/mongo-nfs-pvc.yml
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
@@ -99,7 +99,7 @@ spec:
 
 
 ``` yaml
-[root@10-23-75-240 k8s-specs]# cat scaling/go-demo-5-no-sidecar-mem.yml 
+[root@10-23-75-240 k8s-specs]# cat scaling/go-demo-5-no-sidecar-mem.yml
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -281,7 +281,7 @@ spec:
   - port: 8080
   selector:
     app: api
-[root@10-23-75-240 k8s-specs]# 
+[root@10-23-75-240 k8s-specs]#
 
 ```
 
@@ -304,7 +304,7 @@ db-0                   2/2     Running   0               4m12s
 
 
 
-![image-20220321104418628](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/metrics/image-20220321104418628.png)
+![image-20220321104418628](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/metrics/image-20220321104418628.png)
 
 
 
@@ -395,7 +395,7 @@ api    Deployment/api   39%/80%, 10%/80%   2         5         2          3m42s
 
 
 
-### Current number of replicas below `minReplicas` 
+### Current number of replicas below `minReplicas`
 
 
 
@@ -413,7 +413,7 @@ We can see that both CPU and memory utilization are way below the expected utili
 
 
 
-![image-20220321110050222](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/metrics/image-20220321110050222.png)
+![image-20220321110050222](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/metrics/image-20220321110050222.png)
 
 
 
@@ -428,23 +428,23 @@ We can see that both CPU and memory utilization are way below the expected utili
 
 
 ``` shell
-│ on error: desc = "transport: Error while dialing dial unix /var/run/antrea/cni.sock: connect: no such file or directory"                                                                      
-│   Warning  FailedCreatePodSandBox  5m13s                  kubelet            Failed to create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "fac2e49559d0  
-│ 9b89e9137c12646104b155c627628351765033b8cc25bf64ef94" network for pod "db-0": networkPlugin cni failed to set up pod "db-0_go-demo-5" network: rpc error: code = Unavailable desc = connecti  
-│ on error: desc = "transport: Error while dialing dial unix /var/run/antrea/cni.sock: connect: no such file or directory"                                                                      
-│   Normal   SandboxChanged          5m9s (x12 over 5m20s)  kubelet            Pod sandbox changed, it will be killed and re-created.                                                           
-│   Warning  FailedCreatePodSandBox  21s (x274 over 5m12s)  kubelet            (combined from similar events): Failed to create pod sandbox: rpc error: code = Unknown desc = failed to set up  
-│  sandbox container "eb1887bd20ac39cd061f73383caf6076420eeed4d47931d42377bf14d61fa611" network for pod "db-0": networkPlugin cni failed to set up pod "db-0_go-demo-5" network: rpc error: co  
-│ de = Unavailable desc = connection error: desc = "transport: Error while dialing dial unix /var/run/antrea/cni.sock: connect: no such file or directory"                                      
-│                                                                                                                                                           
+│ on error: desc = "transport: Error while dialing dial unix /var/run/antrea/cni.sock: connect: no such file or directory"
+│   Warning  FailedCreatePodSandBox  5m13s                  kubelet            Failed to create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "fac2e49559d0
+│ 9b89e9137c12646104b155c627628351765033b8cc25bf64ef94" network for pod "db-0": networkPlugin cni failed to set up pod "db-0_go-demo-5" network: rpc error: code = Unavailable desc = connecti
+│ on error: desc = "transport: Error while dialing dial unix /var/run/antrea/cni.sock: connect: no such file or directory"
+│   Normal   SandboxChanged          5m9s (x12 over 5m20s)  kubelet            Pod sandbox changed, it will be killed and re-created.
+│   Warning  FailedCreatePodSandBox  21s (x274 over 5m12s)  kubelet            (combined from similar events): Failed to create pod sandbox: rpc error: code = Unknown desc = failed to set up
+│  sandbox container "eb1887bd20ac39cd061f73383caf6076420eeed4d47931d42377bf14d61fa611" network for pod "db-0": networkPlugin cni failed to set up pod "db-0_go-demo-5" network: rpc error: co
+│ de = Unavailable desc = connection error: desc = "transport: Error while dialing dial unix /var/run/antrea/cni.sock: connect: no such file or directory"
+│
 ```
 
 
 
-![image-20220403110227448](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/metrics/image-20220403110227448.png)
+![image-20220403110227448](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/metrics/image-20220403110227448.png)
 
 ``` shell
-[root@10-23-87-58 k8s]# rm /etc/cni/net.d/10-antrea.conflist 
+[root@10-23-87-58 k8s]# rm /etc/cni/net.d/10-antrea.conflist
 rm：是否删除普通文件 "/etc/cni/net.d/10-antrea.conflist"？y
 ```
 

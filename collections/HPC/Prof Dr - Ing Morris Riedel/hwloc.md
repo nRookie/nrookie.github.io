@@ -55,7 +55,7 @@ To check whether hwloc works on a particular machine, just try to build it and r
 
 
 
- 
+
 
 
 
@@ -157,7 +157,7 @@ PU P#" = Processing Unit Processor #. These are processing elements within the c
 Simulate a fake hierarchy (instead of discovering the topology on the local machine). If <specification> is "node:2 pu:3", the topology will contain two NUMA nodes with 3 processing units in each of them. The <specification> string must end with a number of PUs.
 ```
 
- 
+
 
 ``` shell
 lstopo --output-format pdf --no-io > topo.pdf
@@ -167,7 +167,7 @@ lstopo --output-format pdf --no-io > topo.pdf
 
 
 
-![image-20211202134909574](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202134909574.png)
+![image-20211202134909574](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202134909574.png)
 
 
 
@@ -179,7 +179,7 @@ lstopo --output-format pdf --no-io > topo.pdf
 
 
 
-![image-20211202135132242](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202135132242.png)
+![image-20211202135132242](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202135132242.png)
 
 
 
@@ -189,7 +189,7 @@ lstopo --output-format pdf --no-io > topo.pdf
 lstopo --input "node:1 socket:1 cache:1 cache:2 cache:1 core:1 pu:2" --output-format pdf > topo.pdf
 ```
 
-![image-20211202135430160](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202135430160.png)
+![image-20211202135430160](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202135430160.png)
 
 
 
@@ -197,7 +197,7 @@ lstopo --input "node:1 socket:1 cache:1 cache:2 cache:1 core:1 pu:2" --output-fo
 lstopo --input "node:1 socket:2 cache:1 cache:2 cache:1 core:1 pu:2" --output-format pdf > topo.pdf
 ```
 
-![image-20211202141848104](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202141848104.png)
+![image-20211202141848104](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202141848104.png)
 
 
 
@@ -207,7 +207,7 @@ lstopo --input "node:1 socket:2 cache:1 cache:2 cache:1 core:1 pu:2" --output-fo
 lstopo --input "node:2 socket:2 cache:1 cache:2 cache:1 core:1 pu:2" --output-format pdf > topo.pdf
 ```
 
-![image-20211202141933626](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202141933626.png)
+![image-20211202141933626](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202141933626.png)
 
 
 
@@ -221,7 +221,7 @@ lstopo --input "node:1 socket:2 cache:1 cache:2 cache:1 core:1 pu:4" --output-fo
 
 
 
-![image-20211202142156115](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202142156115.png)
+![image-20211202142156115](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202142156115.png)
 
 
 
@@ -233,7 +233,7 @@ lstopo --input "node:1 socket:2 cache:1 cache:2 cache:1 core:2 pu:2" --output-fo
 
 
 
-![image-20211202142513762](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202142513762.png)
+![image-20211202142513762](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202142513762.png)
 
 
 
@@ -243,7 +243,7 @@ lstopo --input "node:1 socket:2 cache:1 cache:2 cache:1 core:2 pu:1" --output-fo
 
 
 
-![image-20211202142642980](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202142642980.png)
+![image-20211202142642980](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202142642980.png)
 
 
 
@@ -253,7 +253,7 @@ lstopo --input "node:1 socket:2 cache:1 cache:2 cache:1 core:2 pu:1" --output-fo
 lstopo --input "node:1 socket:1 cache:1 cache:2 cache:1 core:2 pu:1" --output-format pdf > topo.pdf
 ```
 
-![image-20211202142736961](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202142736961.png)
+![image-20211202142736961](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202142736961.png)
 
 
 
@@ -265,7 +265,7 @@ lstopo --input "node:1 socket:1 cache:1 cache:2 cache:1 core:2 pu:1" --output-fo
 
 
 
-![image-20211202142812951](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202142812951.png)
+![image-20211202142812951](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202142812951.png)
 
 
 
@@ -277,7 +277,7 @@ lstopo --input "node:1 socket:1 cache:1 cache:1 cache:1 core:1 pu:1" --output-fo
 
 
 
-![image-20211202143102061](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202143102061.png)
+![image-20211202143102061](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202143102061.png)
 
 
 
@@ -289,17 +289,17 @@ lstopo --input "node:1 socket:1 cache:1 cache:1 cache:1 core:1 pu:1" --output-fo
  lstopo --input "node:1 socket:1  cache:1 core:1 pu:1" --output-format pdf > topo.pdf
 ```
 
-![image-20211202143211649](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202143211649.png)
+![image-20211202143211649](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202143211649.png)
 
 
 
-​				 		
+​
 
 ``` shell
 lstopo --input "node:1 socket:1  cache:2 core:1 pu:1" --output-format pdf > topo.pdf
 ```
 
-![image-20211202143325571](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202143325571.png)
+![image-20211202143325571](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202143325571.png)
 
 
 
@@ -309,7 +309,7 @@ lstopo --input "node:1 socket:1 cache:1 cache:1 core:1 pu:1" --output-format pdf
 
 
 
-![image-20211202143405974](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202143405974.png)
+![image-20211202143405974](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202143405974.png)
 
 
 
@@ -321,7 +321,7 @@ lstopo --input "node:1 socket:1 cache:1 cache:2 cache:2 core:1 pu:1" --output-fo
 
 
 
-![image-20211202143604257](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202143604257.png)
+![image-20211202143604257](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202143604257.png)
 
 
 
@@ -331,9 +331,9 @@ lstopo --input "node:1 socket:1 cache:1 cache:1 cache:2 core:1 pu:1" --output-fo
 
 
 
- 
 
-![image-20211202143639819](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202143639819.png)
+
+![image-20211202143639819](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202143639819.png)
 
 
 
@@ -349,7 +349,7 @@ Refereing hwloc Index
 
 Objects in tuples can be any of the following strings (listed from "biggest" to "smallest"):
 
-### 
+###
 
 ### machine
 
@@ -381,7 +381,7 @@ A cache memory. If several kinds of caches exist in the system, a specific one m
 
 
 
-### **core**   
+### **core**
 
 
 
@@ -427,7 +427,7 @@ For example, if the first few lines of lstopo -p output are the following:
 
 
 
-``` 
+```
          Machine (47GB)
            NUMANode P#0 (24GB) + Package P#0 + L3 (12MB)
              L2 (256KB) + L1 (32KB) + Core P#0 + PU P#0
@@ -459,4 +459,4 @@ In this example, the first core on the second package is logically number 6 (i.e
 
 
 
-![image-20211202143806566](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202143806566.png)
+![image-20211202143806566](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202143806566.png)

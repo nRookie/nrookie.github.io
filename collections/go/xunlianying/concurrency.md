@@ -276,35 +276,35 @@ func Modify2() {
 
 ## Leave concurrency to the caller
 
-![image-20220317140828607](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317140828607.png)
+![image-20220317140828607](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317140828607.png)
 
 
 
-![image-20220317141103892](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317141103892.png)
+![image-20220317141103892](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317141103892.png)
 
 
 
 Go routine 泄漏
 
-![image-20220317141340993](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317141340993.png)
+![image-20220317141340993](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317141340993.png)
 
 
 
-![image-20220317141649814](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317141649814.png)
+![image-20220317141649814](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317141649814.png)
 
 Leak() 函数执行完成以后，里面的go func（） 永远不会退出。
 
 
 
-![image-20220317141843964](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317141843964.png)
+![image-20220317141843964](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317141843964.png)
 
 
 
-![image-20220317145217040](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317145217040.png)
+![image-20220317145217040](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317145217040.png)
 
 
 
-![image-20220317145414491](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317145414491.png)
+![image-20220317145414491](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317145414491.png)
 
 
 
@@ -312,7 +312,7 @@ Leak() 函数执行完成以后，里面的go func（） 永远不会退出。
 
 尽量不要在http请求里面开go routine.
 
-![image-20220317145757428](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317145757428.png)
+![image-20220317145757428](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317145757428.png)
 
 
 
@@ -336,29 +336,29 @@ close 一个channel， 如果还有人在写，一定会panic的。
 
 3. channel 退出。
 
-   
-
-![image-20220317154134051](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317154134051.png)
 
 
-
-![image-20220317155114017](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317155114017.png)
+![image-20220317154134051](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317154134051.png)
 
 
 
-![image-20220317155359395](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317155359395.png)
+![image-20220317155114017](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317155114017.png)
 
 
 
-
-
-![image-20220317155722558](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317155722558.png)
+![image-20220317155359395](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317155359395.png)
 
 
 
 
 
-![image-20220317160230345](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317160230345.png)
+![image-20220317155722558](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317155722558.png)
+
+
+
+
+
+![image-20220317160230345](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317160230345.png)
 
 
 

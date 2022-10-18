@@ -1,10 +1,10 @@
-## What exactly is a subdomain? 
+## What exactly is a subdomain?
 
 
 
 A subdomain is nothing but a sub-process of the domain. In other words, a domain is composed of several different activities. These activities are called subdomains. The image below shows how a domain consists of different sub-parts, where every sub-part is a subdomain.
 
-![image-20220506222254657](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/image-20220506222254657.png)
+![image-20220506222254657](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/image-20220506222254657.png)
 
 
 
@@ -18,7 +18,7 @@ However, a subdomain becomes a domain when people zero in on a particular subdom
 
 
 
-![image-20220506222357597](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/image-20220506222357597.png)
+![image-20220506222357597](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/image-20220506222357597.png)
 
 
 
@@ -42,7 +42,7 @@ As we saw in the previous lesson, it is not easy to understand a domain. Now, im
 
 
 
-![image-20220506223023980](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/image-20220506223023980.png)
+![image-20220506223023980](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/image-20220506223023980.png)
 
 
 
@@ -52,7 +52,7 @@ The blue shapes above represent subdomains. Every subdomain has different subpro
 
 Similar sub-processes are considered in every subdomain. It is almost impossible for one person to know everything in a domain, because it is too complex. People specialize in only one domain, because a person can learn about different subdomains, but they can only be an expert in one.
 
-## Domain experts 
+## Domain experts
 
 
 
@@ -60,9 +60,9 @@ As we mentioned earlier, it is not easy to understand every activity that a doma
 
 
 
-![image-20220506223301886](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/image-20220506223301886.png)
+![image-20220506223301886](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/image-20220506223301886.png)
 
-## Summary 
+## Summary
 
 
 

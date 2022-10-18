@@ -1,36 +1,36 @@
-![image-20220317221952940](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317221952940.png)
+![image-20220317221952940](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317221952940.png)
 
 
 
 
 
-![image-20220317222005534](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317222005534.png)
+![image-20220317222005534](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317222005534.png)
 
 
 
-![image-20220317222159933](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317222159933.png)
+![image-20220317222159933](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317222159933.png)
 
 
 
-![image-20220317222356480](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317222356480.png)
-
-
-
-
-
-![image-20220317222423563](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317222423563.png)
+![image-20220317222356480](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317222356480.png)
 
 
 
 
 
-![image-20220317222716557](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317222716557.png)
+![image-20220317222423563](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317222423563.png)
 
 
 
 
 
-![image-20220317223225244](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317223225244.png)
+![image-20220317222716557](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317222716557.png)
+
+
+
+
+
+![image-20220317223225244](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317223225244.png)
 
 
 
@@ -40,7 +40,7 @@ channel 最大的坑是 一定是交给发送着来close channel。
 
 
 
-![image-20220317223609700](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317223609700.png)
+![image-20220317223609700](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317223609700.png)
 
 
 
@@ -151,7 +151,7 @@ type gobuf struct {
 
 
 
-![image-20220317225913332](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317225913332.png)
+![image-20220317225913332](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317225913332.png)
 
 
 
@@ -165,7 +165,7 @@ type gobuf struct {
 
 
 
-![image-20220317230000571](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317230000571.png)
+![image-20220317230000571](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317230000571.png)
 
 
 
@@ -183,7 +183,7 @@ Go 语言并发模型中的 M 是操作系统线程。调度器最多可以创�
 
 
 
-![image-20220317230134739](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317230134739.png)
+![image-20220317230134739](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317230134739.png)
 
 
 
@@ -205,7 +205,7 @@ type m struct {
 
 
 
-![image-20220317230229336](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317230229336.png)
+![image-20220317230229336](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317230229336.png)
 
 
 

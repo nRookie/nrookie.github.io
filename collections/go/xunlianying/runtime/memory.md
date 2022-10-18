@@ -1,6 +1,6 @@
 https://deepu.tech/memory-management-in-golang/
 
-![image-20220330140740742](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/runtime/image-20220330140740742.png)
+![image-20220330140740742](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/runtime/image-20220330140740742.png)
 
 \https://blog.learngoprogramming.com/a-visual-guide-to-golang-memory-allocator-from-ground-up-e132258453ed
 
@@ -32,7 +32,7 @@ The resident set is divided into pages of 8KB each and is managed by one global 
 
 
 
-![image-20220330145903251](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/runtime/image-20220330145903251.png)
+![image-20220330145903251](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/runtime/image-20220330145903251.png)
 
 
 

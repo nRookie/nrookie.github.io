@@ -8,7 +8,7 @@ Let us imagine that there are many aggregates in the domain. They have different
 
 
 
-## What is an aggregate root? 
+## What is an aggregate root?
 
 
 
@@ -16,7 +16,7 @@ Like a normal aggregate, an aggregate root is a cluster of objects with entities
 
 
 
-![image-20220509103528030](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220509103528030.png)
+![image-20220509103528030](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220509103528030.png)
 
 
 
@@ -32,7 +32,7 @@ The selection of an aggregate root is not a trivial task, but we can make it eas
 
 1. An aggregate root should always be an entity, as it requires an identifier.
 2. An aggregate root can be different depending on the context. In **bounded context A**, the aggregate root might be **component A**, but in **bounded context B**, the aggregate root might be **Component B**.
-3. ![image-20220509103720255](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220509103720255.png)
+3. ![image-20220509103720255](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220509103720255.png)
 4. Objects within an aggregate root can hold references to multiple aggregates.
 5. Aggregate roots own a global identity. Artifacts inside the aggregate root show local identities. Nonetheless, the most important identity is that of the root key.
 6. It is important to consider the following questions:
@@ -56,7 +56,7 @@ With regards to the example of a transfer that was analyzed before, let us consi
 
 
 
-![image-20220509104049974](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220509104049974.png)
+![image-20220509104049974](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220509104049974.png)
 
 
 
@@ -123,7 +123,7 @@ A cluster of artifacts, such as entities and values objects, may be considered a
 
 
 
-![image-20220509105740944](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220509105740944.png)
+![image-20220509105740944](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220509105740944.png)
 
 
 
@@ -138,7 +138,7 @@ Which of the following are the models of Model Driven Architecture? (All)
 
 
 
-![image-20220509105947528](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220509105947528.png)
+![image-20220509105947528](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220509105947528.png)
 
 
 

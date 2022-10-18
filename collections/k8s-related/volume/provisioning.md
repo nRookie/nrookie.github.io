@@ -34,10 +34,10 @@ On the one hand, a cluster administrator can create as many StorageClasses as th
 
 
 
-![image-20220321094629198](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/volume/image-20220321094629198.png)
+![image-20220321094629198](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/volume/image-20220321094629198.png)
 
 
 
 
 
-![image-20220321095027739](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/volume/image-20220321095027739.png)
+![image-20220321095027739](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/volume/image-20220321095027739.png)

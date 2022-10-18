@@ -1,4 +1,4 @@
-![image-20220313135500197](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/metrics/image-20220313135500197.png)
+![image-20220313135500197](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/metrics/image-20220313135500197.png)
 
 
 
@@ -16,7 +16,7 @@ I already mentioned extensibility. We can extend the `Metrics Server` to collect
 
 
 
-![image-20220313135736522](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/metrics/image-20220313135736522.png)
+![image-20220313135736522](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/metrics/image-20220313135736522.png)
 
 
 

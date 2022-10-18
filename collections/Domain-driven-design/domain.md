@@ -32,7 +32,7 @@ The first example is related to banking services. An average bank deals with num
 
 
 
-![image-20220506221718840](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/image-20220506221718840.png)
+![image-20220506221718840](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/image-20220506221718840.png)
 
 
 
@@ -42,13 +42,13 @@ The image above shows some activities that can be involved when it comes to anal
 
 
 
-### E-commerce services 
+### E-commerce services
 
 The second example is related to an e-commerce website. This type of company consists of a huge number of activities, too. The image below shows some of the activities that may take place on an e-commerce website. It may feature activities like payments, website development, shipments, stocks, and sales. Each of these activities is executed by an expert.
 
 
 
-![image-20220508151720979](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/image-20220508151720979.png)
+![image-20220508151720979](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/image-20220508151720979.png)
 
 
 

@@ -8,7 +8,7 @@ DDD deals with the problems that the common domain models experience, the domain
 
 
 
-![image-20220507222000545](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507222000545.png)
+![image-20220507222000545](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507222000545.png)
 
 
 
@@ -38,7 +38,7 @@ The confusion between these two terms stems from the fact that they correspond t
 
 
 
-![image-20220507222611822](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507222611822.png)
+![image-20220507222611822](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507222611822.png)
 
 The image above depicts how an organization is broken up into small parts called subdomains, where each subdomain has its own processes. This represents the **problem space**, where we can represent the problems in the domain that we want to solve. It is an abstract definition of the parts that a company is composed of. The image below shows how software components are defined to meet domain problems. This is the **solution space**. Solution space models are built based on abstract problem space models, like the image above
 
@@ -46,7 +46,7 @@ The image above depicts how an organization is broken up into small parts called
 
 
 
-![image-20220507222737712](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507222737712.png)
+![image-20220507222737712](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507222737712.png)
 
 
 

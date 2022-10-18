@@ -14,7 +14,7 @@ Located in the center of the hexagon, a domain contains all of the objects relat
 
 
 
-![image-20220510154233883](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510154233883.png)
+![image-20220510154233883](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510154233883.png)
 
 
 
@@ -28,7 +28,7 @@ The use cases layer exposes functionalities to fulfill business requirements. Th
 
 
 
-![image-20220510155201993](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510155201993.png)
+![image-20220510155201993](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510155201993.png)
 
 
 
@@ -38,7 +38,7 @@ A **port** is an interface, which defines the functions and the data required to
 
 
 
-![image-20220510155433060](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510155433060.png)
+![image-20220510155433060](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510155433060.png)
 
 ### Adapters layer
 
@@ -48,7 +48,7 @@ The adapters layer is the outermost layer of the hexagonal architecture. It inte
 
 The implementation of an adapter allows the external systems to execute the domain logic. An adapter must comply with the interface definition and send all of the required data to achieve that interaction.
 
-![image-20220510155625380](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510155625380.png)
+![image-20220510155625380](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510155625380.png)
 
 
 

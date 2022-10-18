@@ -2,7 +2,7 @@ https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/products/vmwar
 
 
 
-![image-20220312150721632](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/network/image-20220312150721632.png)
+![image-20220312150721632](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/network/image-20220312150721632.png)
 
 
 
@@ -26,11 +26,11 @@ The Antrea Agent includes two Kubernetes controllers: • The node controller wa
 
 
 
-### OVS daemons 
+### OVS daemons
 
 The two OVS daemons—ovsds-server and ovs-vswitched—run in a separate container, called antrea-ovs, of the Antrea Agent DaemonSet.
 
-#### antrea-cni 
+#### antrea-cni
 
 antrea-cni is the CNI plug-in binary of Antrea. It is executed by kubelet for each CNI command. It is a simple gRPC client that issues an RPC to the Antrea Agent for each CNI command. The Agent performs the actual work (sets up networking for the pod) and returns the result or an error to antrea-cni.
 
@@ -60,13 +60,13 @@ On every node, the Antrea Agent creates an OVS bridge (named br-int by default),
 
 
 
-![image-20220312151642378](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/network/image-20220312151642378.png)
+![image-20220312151642378](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/network/image-20220312151642378.png)
 
-### 
+###
 
 Each node is assigned a single subnet, and all pods on the node get an IP from the subnet. Antrea leverages Kubernetes’ NodeIPAMController for the node subnet allocation, which sets the podCIDR field of the Kubernetes node spec to the allocated subnet. The Antrea Agent retrieves the subnets of nodes from the podCIDR field. It reserves the first IP of the local node’s subnet to be the gateway IP and assigns it to the antrea-gw0 port, and invokes the host-local IPAM plug-in to allocate IPs from the subnet to all local pods. A local pod is assigned an IP when the CNI ADD command is received for that pod.
 
-![image-20220312152023377](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/network/image-20220312152023377.png)
+![image-20220312152023377](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/network/image-20220312152023377.png)
 
 
 
@@ -76,7 +76,7 @@ For every remote node, the Antrea Agent adds an OVS flow to send the traffic to 
 
 
 
--  Intra-node traffic – Packets between two local pods will be forwarded by the OVS bridge directly. 
+-  Intra-node traffic – Packets between two local pods will be forwarded by the OVS bridge directly.
 
 - Inter-node traffic – Packets to a pod on another node will be first forwarded to the antrea-tun0 port, encapsulated and sent to the destination node through the tunnel. Then, they will be decapsulated, injected through the antrea-tun0 port to the OVS bridge and, finally, forwarded to the destination pod.
 
@@ -86,11 +86,11 @@ For every remote node, the Antrea Agent adds an OVS flow to send the traffic to 
 
 
 
-![image-20220312152240280](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/network/image-20220312152240280.png)
+![image-20220312152240280](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/network/image-20220312152240280.png)
 
 
 
-At the moment, Antrea leverages kube-proxy to serve traffic for ClusterIP and NodePort type services. The packets from a pod to a service’s ClusterIP will be forwarded through the antrea-gw0 port, then kube-proxy will select one service back-end pod to be the connection’s destination and DNAT the packets to the pod’s IP and port. If the destination pod is on the local node, the packets will be forwarded to the pod directly. If it is on another node, the packets will be sent to that node via the tunnel. 
+At the moment, Antrea leverages kube-proxy to serve traffic for ClusterIP and NodePort type services. The packets from a pod to a service’s ClusterIP will be forwarded through the antrea-gw0 port, then kube-proxy will select one service back-end pod to be the connection’s destination and DNAT the packets to the pod’s IP and port. If the destination pod is on the local node, the packets will be forwarded to the pod directly. If it is on another node, the packets will be sent to that node via the tunnel.
 
 
 

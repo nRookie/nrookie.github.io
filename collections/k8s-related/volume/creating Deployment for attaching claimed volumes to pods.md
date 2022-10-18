@@ -20,4 +20,4 @@ Since we are running the cluster in AWS, it is easier to delete than to recycle 
 
 
 
-![image-20220321094029896](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/volume/image-20220321094029896.png)
+![image-20220321094029896](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/volume/image-20220321094029896.png)

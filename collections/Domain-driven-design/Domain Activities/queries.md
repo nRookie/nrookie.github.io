@@ -2,7 +2,7 @@ A user may want to know what happens in the system when something is executed in
 
 
 
-![image-20220508154331886](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508154331886.png)
+![image-20220508154331886](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508154331886.png)
 
 ## What are queries?
 
@@ -24,23 +24,23 @@ The following image shows how two queries are exactly the same when there are no
 
 
 
-![image-20220508154707958](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508154707958.png)
+![image-20220508154707958](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508154707958.png)
 
 On the other hand, when there is a change of state between two queries, the result is different:
 
-![image-20220508154754588](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508154754588.png)
+![image-20220508154754588](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508154754588.png)
 
 
 
 
 
-### Queries and ubiquitous language 
+### Queries and ubiquitous language
 
 Ultimately, queries are defined based on the ubiquitous language pattern. This implies that they should be named in accordance with business terms, and the code should reflect these terms. Some examples of queries are: *checked if payment was executed*, *get user information*, or *get movements*.
 
 
 
-![image-20220508154843365](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508154843365.png)
+![image-20220508154843365](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508154843365.png)
 
 
 

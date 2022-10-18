@@ -7,12 +7,12 @@
 ``` shell
 [root@primary ~]# sinfo -Nl
 Sun Nov 14 16:58:02 2021
-NODELIST   NODES PARTITION       STATE CPUS    S:C:T MEMORY TMP_DISK WEIGHT AVAIL_FE REASON              
-backup         1   control        idle 2       1:1:2   3804        0      1   (null) none                
-node1          1  compute*        idle 2       1:1:2  15772        0      1   (null) none                
-node2          1  compute*        idle 2       1:1:2  15772        0      1   (null) none                
-node3          1  compute*        idle 2       1:1:2  15772        0      1   (null) none                
-primary        1   control        idle 2       1:1:2   3804        0      1   (null) none   
+NODELIST   NODES PARTITION       STATE CPUS    S:C:T MEMORY TMP_DISK WEIGHT AVAIL_FE REASON
+backup         1   control        idle 2       1:1:2   3804        0      1   (null) none
+node1          1  compute*        idle 2       1:1:2  15772        0      1   (null) none
+node2          1  compute*        idle 2       1:1:2  15772        0      1   (null) none
+node3          1  compute*        idle 2       1:1:2  15772        0      1   (null) none
+primary        1   control        idle 2       1:1:2   3804        0      1   (null) none
 ```
 
 
@@ -71,7 +71,7 @@ go run cmd/tools/main.go  0.59s user 0.44s system 15% cpu 6.509 total
 
 
 
-#### Vmstat 
+#### Vmstat
 
 
 
@@ -243,7 +243,7 @@ Completed 1000 requests
 Finished 1000 requests
 
 
-Server Software:        
+Server Software:
 Server Hostname:        localhost
 Server Port:            6820
 
@@ -306,7 +306,7 @@ Completed 1000 requests
 Finished 1000 requests
 
 
-Server Software:        
+Server Software:
 Server Hostname:        localhost
 Server Port:            6820
 
@@ -368,7 +368,7 @@ Completed 1000 requests
 Finished 1000 requests
 
 
-Server Software:        
+Server Software:
 Server Hostname:        localhost
 Server Port:            6820
 
@@ -404,7 +404,7 @@ Percentage of the requests served within a certain time (ms)
   98%   8441
   99%   8595
  100%   8693 (longest request)
-[root@primary ~]# 
+[root@primary ~]#
 
 ```
 
@@ -432,7 +432,7 @@ Completed 1000 requests
 Finished 1000 requests
 
 
-Server Software:        
+Server Software:
 Server Hostname:        localhost
 Server Port:            6820
 
@@ -498,7 +498,7 @@ Completed 1000 requests
 Finished 1000 requests
 
 
-Server Software:        
+Server Software:
 Server Hostname:        {ip}
 Server Port:            6820
 
@@ -589,21 +589,21 @@ Total of 984 requests completed
 
 ### 通过go 写的并发脚本执行.
 
-![image-20211115103001540](/Users/user/playground/share/nrookie.github.io/collections/slurm/image-20211115103001540.png)
+![image-20211115103001540](/Users/kestrel/developer/nrookie.github.io/collections/slurm/image-20211115103001540.png)
 
 
 
 ### 通过apachebench 测试 （广东区域的虚拟机发送）
 
-![image-20211115105042636](/Users/user/playground/share/nrookie.github.io/collections/slurm/image-20211115105042636.png)
+![image-20211115105042636](/Users/kestrel/developer/nrookie.github.io/collections/slurm/image-20211115105042636.png)
 
 ### 通过apachebench 测试 (办公网)
 
-![image-20211115104748708](/Users/user/playground/share/nrookie.github.io/collections/slurm/image-20211115104748708.png)
+![image-20211115104748708](/Users/kestrel/developer/nrookie.github.io/collections/slurm/image-20211115104748708.png)
 
 
 
-###  
+###
 
 
 
@@ -613,7 +613,7 @@ Total of 984 requests completed
 
 再使用手机5G网络热点确认一下
 
-![image-20211115115106141](/Users/user/playground/share/nrookie.github.io/collections/slurm/image-20211115115106141.png)
+![image-20211115115106141](/Users/kestrel/developer/nrookie.github.io/collections/slurm/image-20211115115106141.png)
 
 
 
@@ -641,19 +641,19 @@ cpu负载很低。
 
 #### 办公网
 
-![image-20211115112144030](/Users/user/playground/share/nrookie.github.io/collections/slurm/image-20211115112144030.png)
+![image-20211115112144030](/Users/kestrel/developer/nrookie.github.io/collections/slurm/image-20211115112144030.png)
 
 
 
 #### 广东2网络
 
-![image-20211115112321693](/Users/user/playground/share/nrookie.github.io/collections/slurm/image-20211115112321693.png)
+![image-20211115112321693](/Users/kestrel/developer/nrookie.github.io/collections/slurm/image-20211115112321693.png)
 
- 
+
 
 为什么办公网system的usage 这么高?
 
-![image-20211115134756443](/Users/user/playground/share/nrookie.github.io/collections/slurm/image-20211115134756443.png)
+![image-20211115134756443](/Users/kestrel/developer/nrookie.github.io/collections/slurm/image-20211115134756443.png)
 
 
 
@@ -661,13 +661,13 @@ cpu负载很低。
 
 #### 办公网
 
-<img src="/Users/user/playground/share/nrookie.github.io/collections/slurm/image-20211115140859244.png" alt="image-20211115140859244" style="zoom:80%;" />
+<img src="/Users/kestrel/developer/nrookie.github.io/collections/slurm/image-20211115140859244.png" alt="image-20211115140859244" style="zoom:80%;" />
 
 
 
 #### 广东2网访问
 
-<img src="/Users/user/playground/share/nrookie.github.io/collections/slurm/image-20211115141315768.png" alt="image-20211115141315768" style="zoom:80%;" />
+<img src="/Users/kestrel/developer/nrookie.github.io/collections/slurm/image-20211115141315768.png" alt="image-20211115141315768" style="zoom:80%;" />
 
 
 
@@ -691,7 +691,7 @@ ExecStart=/usr/sbin/slurmrestd -f /etc/slurm/slurm.conf -t 4 -u slurmrestd -a re
 
 
 
- 
+
 
 
 
@@ -718,7 +718,7 @@ ExecStart=/usr/sbin/slurmrestd -f /etc/slurm/slurm.conf -t 4 -u slurmrestd -a re
 watch interrupts
 
 ``` shell
-watch -tdn1 cat /proc/interrupts 
+watch -tdn1 cat /proc/interrupts
 ```
 
 
@@ -749,11 +749,11 @@ pidstat -wt 1
 
 
 
-![image-20211115171748294](/Users/user/playground/share/nrookie.github.io/collections/slurm/image-20211115171748294.png)
+![image-20211115171748294](/Users/kestrel/developer/nrookie.github.io/collections/slurm/image-20211115171748294.png)
 
 
 
-![image-20211115172012605](/Users/user/playground/share/nrookie.github.io/collections/slurm/image-20211115172012605.png)
+![image-20211115172012605](/Users/kestrel/developer/nrookie.github.io/collections/slurm/image-20211115172012605.png)
 
 
 

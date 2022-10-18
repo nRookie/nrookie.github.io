@@ -26,13 +26,13 @@ The following diagram depicts the adapter layer, which defines six artifacts. Ad
 
 
 
-![image-20220510173243125](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510173243125.png)
+![image-20220510173243125](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510173243125.png)
 
 
 
 The image above shows what was implemented previously. Now, it is time to understand how the adapter layer interacts only with the port layer. This interaction can be seen in the image below.
 
-![image-20220510173414330](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510173414330.png)
+![image-20220510173414330](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510173414330.png)
 
 
 

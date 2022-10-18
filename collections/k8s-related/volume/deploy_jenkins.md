@@ -1,7 +1,7 @@
 
 
 ```yaml
-[root@10-23-75-240 k8s-specs]# cat volume/jenkins.yml 
+[root@10-23-75-240 k8s-specs]# cat volume/jenkins.yml
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -76,7 +76,7 @@ kubectl create \
 
 
 
-![image-20220316103101208](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/volume/image-20220316103101208.png)
+![image-20220316103101208](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/volume/image-20220316103101208.png)
 
 
 
@@ -166,11 +166,11 @@ kubectl rollout status deploy jenkins
 POD_NAME=$(kubectl get pods \
     -l service=jenkins,type=master \
     -o jsonpath="{.items[*].metadata.name}")
-    
+
     kubectl exec -it $POD_NAME -- kill 1
-    
+
     kubectl get pods
-    
+
     jenkins-65cd66b7dc-6tpr2          1/1     Running   1 (8s ago)    99s
 ```
 
@@ -232,7 +232,7 @@ In the next lesson, we will test your understanding of Volumes with the help of 
 
 
 
-![image-20220316104507679](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/volume/image-20220316104507679.png)
+![image-20220316104507679](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/volume/image-20220316104507679.png)
 
 
 

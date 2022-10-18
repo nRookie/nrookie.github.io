@@ -3,7 +3,7 @@ The two major advantages of Redis cluster are:
 - The ability to automatically split the dataset among multiple nodes.
 - The ability to continue operations when a subset of the nodes are experiencing failures or are unable to communicate with the rest of the cluster.
 
-![image-20220312164059657](/Users/user/playground/share/nrookie.github.io/collections/database/redis/image-20220312164059657.png)
+![image-20220312164059657](/Users/kestrel/developer/nrookie.github.io/collections/database/redis/image-20220312164059657.png)
 
 
 
@@ -154,7 +154,7 @@ OK
 127.0.0.1:7003> get Zane
 -> Redirected to slot [9709] located at 127.0.0.1:7002
 "32"
-127.0.0.1:7002> 
+127.0.0.1:7002>
 ```
 
 
@@ -181,7 +181,7 @@ cluster_stats_messages_sent:329
 cluster_stats_messages_ping_received:165
 cluster_stats_messages_pong_received:164
 cluster_stats_messages_received:329
-127.0.0.1:7002> 
+127.0.0.1:7002>
 ```
 
 ## Adding nodes to a cluster[#](https://www.educative.io/courses/complete-guide-to-redis/B8KErVGEyr2#Adding-nodes-to-a-cluster)

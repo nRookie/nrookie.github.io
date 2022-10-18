@@ -2,11 +2,11 @@
 
 
 
-![image-20220319134219301](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220319134219301.png)
+![image-20220319134219301](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220319134219301.png)
 
 
 
-![image-20220319134305329](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220319134305329.png)
+![image-20220319134305329](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220319134305329.png)
 
 
 
@@ -22,19 +22,19 @@ go test -parallel n
 
 
 
-![image-20220319134839701](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220319134839701.png)
+![image-20220319134839701](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220319134839701.png)
 
 
 
-![image-20220319135022697](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220319135022697.png)
+![image-20220319135022697](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220319135022697.png)
 
 
 
-![image-20220319135411152](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220319135411152.png)
+![image-20220319135411152](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220319135411152.png)
 
 
 
-![image-20220319135450152](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220319135450152.png)
+![image-20220319135450152](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220319135450152.png)
 
 
 
@@ -44,15 +44,15 @@ go test -parallel n
 
 
 
-![image-20220319135719433](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220319135719433.png)
+![image-20220319135719433](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220319135719433.png)
 
 
 
 
 
-![image-20220319140349064](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220319140349064.png)
+![image-20220319140349064](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220319140349064.png)
 
 
 
-![image-20220319140419403](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220319140419403.png)
+![image-20220319140419403](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220319140419403.png)
 

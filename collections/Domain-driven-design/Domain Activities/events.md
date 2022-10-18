@@ -32,7 +32,7 @@ Let us assume that a customer of a bank wants to transfer money. Once the comman
 
 
 
-![image-20220508153123007](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508153123007.png)
+![image-20220508153123007](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508153123007.png)
 
 
 
@@ -54,7 +54,7 @@ When defining domain events that happen in a domain, it is important to consider
 2. Ubiquitous language must be used as the basis when domain events are named.
 3. Domain events should be defined and built, because they are required to execute something else. According to the **YAGNI** principle, which stands for “You Aren’t Gonna Need It”, someone should always implement things when they are needed, never when it is presumed that they will be needed. In terms of DDD, this means that domain events should be defined and implemented only when they will support some business process.
 4. Domain events can be emitted to or received from a system, from either a logging system, a billing system, or an external system. A consideration of these functionalities permits us to predict whether or not the construction of a domain event is worth it to a business. Interactions by domain events can be detected in an event storming session. A very basic interaction between some bounded contexts is shown in the image below —where *“bounded context A”* shares the same domain event with *“bounded context B”* and *“bounded context C”*.
-5. ![image-20220508154007220](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508154007220.png)
+5. ![image-20220508154007220](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508154007220.png)
 
 
 

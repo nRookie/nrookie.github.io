@@ -10,7 +10,7 @@ During the construction of components such as microservices, we deal with concer
 
 
 
-![image-20220507230824653](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507230824653.png)
+![image-20220507230824653](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507230824653.png)
 
 
 
@@ -18,7 +18,7 @@ he space of this problem is shown in the image above. It depicts how two compone
 
 
 
-## What is a shared kernel? 
+## What is a shared kernel?
 
 
 
@@ -30,7 +30,7 @@ Let us explore this concept in more detail, with an example. Imagine there are t
 
 
 
-![image-20220507231001256](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507231001256.png)
+![image-20220507231001256](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507231001256.png)
 
 
 
@@ -40,7 +40,7 @@ As the image above shows, “Logs” and “REST” are common implementations i
 
 
 
-![image-20220507231020692](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507231020692.png)
+![image-20220507231020692](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507231020692.png)
 
 
 
@@ -48,11 +48,11 @@ They should implement a shared kernel pattern. The image below shows an external
 
 
 
-![image-20220507231037313](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507231037313.png)
+![image-20220507231037313](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507231037313.png)
 
 
 
-### Benefits of the shared kernel pattern 
+### Benefits of the shared kernel pattern
 
 
 
@@ -80,6 +80,6 @@ This extra library increases complexity, in terms of management and development:
 
 
 
-## Summary 
+## Summary
 
 A shared kernel contains functionalities that are common across two or more bounded contexts. It avoids the repetition of code in several places and helps the projects evolve quickly over time.

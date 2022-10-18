@@ -12,7 +12,7 @@
 
 
 
-![image-20220424151631473](/Users/user/playground/share/nrookie.github.io/collections/database/elsticsearch/image-20220424151631473.png)
+![image-20220424151631473](/Users/kestrel/developer/nrookie.github.io/collections/database/elsticsearch/image-20220424151631473.png)
 
 
 
@@ -122,6 +122,6 @@ GET /_nodes
 
 
 ``` shell
-curl -X GET "http://100.127.9.84:9200"   
+curl -X GET "http://100.127.9.84:9200"
 ```
 

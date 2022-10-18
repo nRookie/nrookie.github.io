@@ -25,7 +25,7 @@ The following diagram depicts the domain layer and how the domain objects should
 
 
 
-![image-20220510160330874](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510160330874.png)
+![image-20220510160330874](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510160330874.png)
 
 
 

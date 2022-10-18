@@ -16,7 +16,7 @@ The following diagram depicts the use case layer, which defines two artifacts. A
 
 
 
-<img src="/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510164446848.png" alt="image-20220510164446848" style="zoom:200%;" />
+<img src="/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510164446848.png" alt="image-20220510164446848" style="zoom:200%;" />
 
 
 

@@ -2,14 +2,14 @@
 
 
 
-![企业微信截图_16379191144608](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/企业微信截图_16379191144608.png)
+![企业微信截图_16379191144608](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/企业微信截图_16379191144608.png)
 
 
 
 
 
 
- 
+
 numa绑核就是你上次说的，两侧的内存绑到socket上，让socket内的cpu不需要通过QPI去访问另一侧的内存导致性能下降
 
 
@@ -66,13 +66,13 @@ https://www.kernel.org/doc/Documentation/ABI/testing/sysfs-class-net
 ### Network card numa information
 
 ``` shell
-[root@hd08-uhost-148-240 ~]# cat /sys/class/net/net0/device/numa_node 
+[root@hd08-uhost-148-240 ~]# cat /sys/class/net/net0/device/numa_node
 0
-[root@hd08-uhost-148-240 ~]# cat /sys/class/net/net1/device/numa_node 
+[root@hd08-uhost-148-240 ~]# cat /sys/class/net/net1/device/numa_node
 0
-[root@hd08-uhost-148-240 ~]# cat /sys/class/net/net2/device/numa_node 
+[root@hd08-uhost-148-240 ~]# cat /sys/class/net/net2/device/numa_node
 0
-[root@hd08-uhost-148-240 ~]# cat /sys/class/net/net3/device/numa_node 
+[root@hd08-uhost-148-240 ~]# cat /sys/class/net/net3/device/numa_node
 0
 ```
 
@@ -87,6 +87,6 @@ https://www.kernel.org/doc/Documentation/ABI/testing/sysfs-class-net
 Check CPU per information
 
 ``` shell
- mpstat -A 5 
+ mpstat -A 5
 ```
 

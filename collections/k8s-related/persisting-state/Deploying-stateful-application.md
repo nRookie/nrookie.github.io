@@ -93,7 +93,7 @@ deployment "jenkins" successfully rolled out
 
 
 
-![image-20220317011327091](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/persisting-state/image-20220317011327091.png)
+![image-20220317011327091](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/persisting-state/image-20220317011327091.png)
 
 
 
@@ -122,7 +122,7 @@ kubectl --namespace jenkins \
     -o json
 ```
 
- 
+
 
 We retrieved the Pods from the `jenkins` Namespace, filtered them with the selector `api=jenkins`, and formatted the output as `json`.
 

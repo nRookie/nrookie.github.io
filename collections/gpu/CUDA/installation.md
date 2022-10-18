@@ -20,13 +20,13 @@ wget https://us.download.nvidia.com/XFree86/Linux-x86_64/495.46/NVIDIA-Linux-x86
 
 ### run it
 
-![image-20220505143656051](/Users/user/playground/share/nrookie.github.io/collections/gpu/CUDA/image-20220505143656051.png)
+![image-20220505143656051](/Users/kestrel/developer/nrookie.github.io/collections/gpu/CUDA/image-20220505143656051.png)
 
 
 
 
 
-https://askubuntu.com/questions/481414/install-nvidia-driver-instead-of-nouveau 
+https://askubuntu.com/questions/481414/install-nvidia-driver-instead-of-nouveau
 
 it seems like do not need to install it any more.
 
@@ -50,7 +50,7 @@ wget https://developer.download.nvidia.com/compute/cuda/11.6.2/local_installers/
 
 
 
-#### Verify the System has the Correct Kernel Headers and Development Packages Installed 
+#### Verify the System has the Correct Kernel Headers and Development Packages Installed
 
 https://bugzilla.redhat.com/show_bug.cgi?id=1986132
 
@@ -58,7 +58,7 @@ https://bugzilla.redhat.com/show_bug.cgi?id=1986132
 
 ``` shell
 [root@10-9-60-113 gpu]# sudo dnf install kernel-devel-$(uname -r) kernel-headers-$(uname -r)
-CentOS-8 - PowerTools                                                                                                                                     81  B/s |  38  B     00:00    
+CentOS-8 - PowerTools                                                                                                                                     81  B/s |  38  B     00:00
 Error: Failed to download metadata for repo 'PowerTools': Cannot prepare internal mirrorlist: No URLs in mirrorlist
 ```
 
@@ -107,7 +107,7 @@ lsmod | grep nouveau
 #### Execute Runfile
 
 ``` shell
-sh cuda_11.6.2_510.47.03_linux.run 
+sh cuda_11.6.2_510.47.03_linux.run
 ```
 
 
@@ -115,18 +115,18 @@ sh cuda_11.6.2_510.47.03_linux.run
 #### Errors
 
 ``` shell
-[root@10-9-60-113 gpu]# sh cuda_11.6.2_510.47.03_linux.run 
+[root@10-9-60-113 gpu]# sh cuda_11.6.2_510.47.03_linux.run
 
  Installation failed. See log at /var/log/cuda-installer.log for details.
-[root@10-9-60-113 gpu]# cat  /var/log/cuda-installer.log 
+[root@10-9-60-113 gpu]# cat  /var/log/cuda-installer.log
 [INFO]: Driver not installed.
 [INFO]: Checking compiler version...
 [INFO]: gcc location: /usr/bin/gcc
 
-[INFO]: gcc version: gcc version 8.5.0 20210514 (Red Hat 8.5.0-4) (GCC) 
+[INFO]: gcc version: gcc version 8.5.0 20210514 (Red Hat 8.5.0-4) (GCC)
 ```
 
-#### 
+####
 
 Install the headers
 
@@ -169,7 +169,7 @@ Logfile is /var/log/cuda-installer.log
 
 
 
-### Device Node Verification 
+### Device Node Verification
 
 ``` shell
 #!/bin/bash

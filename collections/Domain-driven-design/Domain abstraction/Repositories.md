@@ -14,7 +14,7 @@ A repository does not necessarily involve a database. A **repository** is a patt
 
 
 
-![image-20220509110316937](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509110316937.png)
+![image-20220509110316937](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509110316937.png)
 
 
 
@@ -31,10 +31,10 @@ A repository should display the following characteristics to be a good implement
 
 
 - An aggregate should only interact with one repository. Similarly, a repository must only interact with one aggregate. The image below shows how every aggregate is paired with its own repository.
-- ![image-20220509110449965](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509110449965.png)
+- ![image-20220509110449965](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509110449965.png)
 - A repository interface should only expose business-logic behavior. Functions and their attributes should be named in relation to their domain behavior. As the image below shows, the function, `getAccount(Account)`, is named in non-technical terms and receives the artifact account. On the other hand, the wrong definition defines a technical function, `getAccountById(id)`, and receives an ID.
 - Persistence operations should be atomic. If the user needs to store a new state of a domain, it should be guaranteed as every stored aggregate acquires a new state. This behavior is depicted in the image shown below.
-- ![image-20220509110836834](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509110836834.png)
+- ![image-20220509110836834](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509110836834.png)
 
 ### Benefits of repositories
 
@@ -69,7 +69,7 @@ The model will be as follows:
 
 
 
-![image-20220509111556626](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509111556626.png)
+![image-20220509111556626](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509111556626.png)
 
 
 
@@ -99,4 +99,4 @@ The tactical patterns are **applied within a single bounded context**. In a micr
 
 
 
-DDD strategic patterns are **used to design abstractions of Business domain models incorporating behavior and data**. 
+DDD strategic patterns are **used to design abstractions of Business domain models incorporating behavior and data**.

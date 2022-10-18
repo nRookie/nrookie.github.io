@@ -71,7 +71,7 @@ We’ll explore other Ingress Controllers once we move our cluster to “real”
 
 
 
-![image-20220314224147300](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/network/image-20220314224147300.png)
+![image-20220314224147300](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/network/image-20220314224147300.png)
 
 
 

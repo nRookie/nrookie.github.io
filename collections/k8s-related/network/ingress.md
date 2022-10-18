@@ -51,8 +51,8 @@ Fortunately, the community already built a myriad of Ingress Controllers. We won
 ``` shell
 kubectl create \
     -f ingress/go-demo-2-ingress.yml
-    
-    
+
+
 [root@10-23-75-240 k8s-specs]# kubectl get \
 >     -f ingress/go-demo-2-ingress.yml
 NAME        CLASS    HOSTS   ADDRESS         PORTS   AGE
@@ -77,7 +77,7 @@ Let’s see, through a sequence diagram, what happened when we created the Ingre
 2. The ingress controller is watching the API server for new events. It detected that there is a new Ingress resource.
 3. The ingress controller configured the load balancer. In this case, it is nginx which was enabled by `minikube addons enable ingress` command. It modified `nginx.conf` with the values of all `go-demo-2-api` endpoints.
 
-![image-20220313153441602](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/network/image-20220313153441602.png)
+![image-20220313153441602](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/network/image-20220313153441602.png)
 
 
 
@@ -91,8 +91,8 @@ Ingress is a (kind of) Service that runs on all nodes of a cluster. A user can s
 
 
 
-![image-20220313153635314](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/network/image-20220313153635314.png)
+![image-20220313153635314](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/network/image-20220313153635314.png)
 
 
 
-![image-20220313154135475](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/network/image-20220313154135475.png)
+![image-20220313154135475](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/network/image-20220313154135475.png)

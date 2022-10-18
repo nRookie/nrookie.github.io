@@ -58,7 +58,7 @@ Lastly, the user-space proxy installs iptables rules which capture traffic to th
 
 By default, kube-proxy in userspace mode chooses a backend via a round-robin algorithm.
 
-![image-20220312101807132](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/network/image-20220312101807132.png)
+![image-20220312101807132](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/network/image-20220312101807132.png)
 
 
 
@@ -80,7 +80,7 @@ You can use Pod [readiness probes](https://kubernetes.io/docs/concepts/workloads
 
 
 
-![image-20220312102055378](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/network/image-20220312102055378.png)
+![image-20220312102055378](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/network/image-20220312102055378.png)
 
 
 

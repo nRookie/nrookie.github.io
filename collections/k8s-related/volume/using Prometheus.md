@@ -108,7 +108,7 @@ scrape_configs:
 
 The problem is with the `metrics_path` field. By default, it is set to `/metrics`. However, since we changed the base path to `/prometheus`, the field should have `/prometheus/metrics` as the value.
 
-### Changing Prometheus Configuration 
+### Changing Prometheus Configuration
 
 
 
@@ -219,10 +219,10 @@ If you recall, we copied one file to the `~/.minikube/files` directory, and Mini
 ``` shell
 [root@10-23-75-240 k8s-specs]# cp volume/prometheus-conf.yml  /files
 
-[root@10-23-75-240 k8s-specs]# scp volume/prometheus-conf.yml root@106.75.225.217:/files/ 
-prometheus-conf.yml                                                                                                                                               100%  177    93.5KB/s   00:00    
+[root@10-23-75-240 k8s-specs]# scp volume/prometheus-conf.yml root@106.75.225.217:/files/
+prometheus-conf.yml                                                                                                                                               100%  177    93.5KB/s   00:00
 [root@10-23-75-240 k8s-specs]# scp volume/prometheus-conf.yml root@106.75.245.207:/files/
-root@106.75.245.207's password: 
+root@106.75.245.207's password:
 prometheus-conf.yml
 ```
 
@@ -249,7 +249,7 @@ google-chrome --no-sandbox --user-data-dir
 
 
 
-![image-20220316101706937](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/volume/image-20220316101706937.png)
+![image-20220316101706937](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/volume/image-20220316101706937.png)
 
 
 
@@ -290,7 +290,7 @@ kubectl delete \
 
 
 
-![image-20220321091920236](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/volume/image-20220321091920236.png)
+![image-20220321091920236](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/volume/image-20220321091920236.png)
 
 
 

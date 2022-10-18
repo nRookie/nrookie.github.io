@@ -50,7 +50,7 @@ wget --no-check-certificate https://sourceforge.net/projects/openfoam/files/v211
    vi ./tools/build/v2/user-config.jam
    using mpi ;
    ./b2 install --prefix=/nfs1/opt/boost/1.48.0/
-   
+
    ```
 
 6. Install cmake
@@ -60,14 +60,14 @@ wget --no-check-certificate https://sourceforge.net/projects/openfoam/files/v211
    tar -xzvf cmake-v3.11.0.tar.gz
    cd cmake-v3.11.0/
    ./bootstrap --prefix=/nfs1/opt/cmake/3.11.0
-   
+
    ```
 
 7. install fftw
 
    ``` shell
    wget http://www.fftw.org/fftw-3.3.10.tar.gz
-   tar -xzvf fftw-3.3.10.tar.gz 
+   tar -xzvf fftw-3.3.10.tar.gz
    ./configure --prefix=/nfs1/fftw/3.3.10
    ```
 
@@ -75,7 +75,7 @@ wget --no-check-certificate https://sourceforge.net/projects/openfoam/files/v211
 
    ``` shell
    wget https://download.qt.io/archive/qt/5.12/5.12.0/single/qt-everywhere-src-5.12.0.tar.xz
-   tar -xvf qt-everywhere-src-5.12.0.tar.xz 
+   tar -xvf qt-everywhere-src-5.12.0.tar.xz
    cd qt-everywhere-src-5.12.0/
    ./configure --prefix=/nfs1/opt/qt/5.12.0
    yum install openssl -y
@@ -92,11 +92,11 @@ wget --no-check-certificate https://sourceforge.net/projects/openfoam/files/v211
 
    ``` shell
    yum install libxcb-devel libxkbcommon-devel xcb-util-devel xcb-util-image-devel xcb-util-keysyms-devel xcb-util-renderutil-devel xcb-util-wm-devel mesa-libGL-devel -y
-   
+
    ./configure --prefix=/nfs1/opt/qt/5.12.12 -xcb -xcb-xlib -xcb-xinput
    ```
 
-   
+
 
 9. Install Paraview
 
@@ -147,12 +147,12 @@ wget --no-check-certificate https://sourceforge.net/projects/openfoam/files/v211
 
    successfully run the paraview, but have errors
 
-   ![image-20220114142945682](/Users/user/playground/share/nrookie.github.io/collections/HPC/openfoam/image-20220114142945682.png)
+   ![image-20220114142945682](/Users/kestrel/developer/nrookie.github.io/collections/HPC/openfoam/image-20220114142945682.png)
 
-   ![image-20220114143119562](/Users/user/playground/share/nrookie.github.io/collections/HPC/openfoam/image-20220114143119562.png)
+   ![image-20220114143119562](/Users/kestrel/developer/nrookie.github.io/collections/HPC/openfoam/image-20220114143119562.png)
 
    ``` shell
-   [root@primary paraview_build]# ./bin/vtkProbeOpenGLVersion 
+   [root@primary paraview_build]# ./bin/vtkProbeOpenGLVersion
    libGL error: unable to load driver: swrast_dri.so
    libGL error: failed to load driver: swrast
    X Error of failed request:  BadValue (integer parameter out of range for operation)
@@ -163,8 +163,8 @@ wget --no-check-certificate https://sourceforge.net/projects/openfoam/files/v211
      Current serial number in output stream:  56
    [root@primary paraview_build]# yum install -y mesa-libGLw-devel.x86_64
    yum install mesa-dri-drivers
-   
-   [root@primary paraview_build]# ./bin/vtkProbeOpenGLVersion 
+
+   [root@primary paraview_build]# ./bin/vtkProbeOpenGLVersion
    libGL error: No matching fbConfigs or visuals found
    libGL error: failed to load driver: swrast
    X Error of failed request:  BadValue (integer parameter out of range for operation)
@@ -173,7 +173,7 @@ wget --no-check-certificate https://sourceforge.net/projects/openfoam/files/v211
      Value in failed request:  0x0
      Serial number of failed request:  61
      Current serial number in output stream:  62
-   
+
    [root@primary paraview_build]# glxinfo
    name of display: localhost:10.0
    libGL: OpenDriver: trying /usr/lib64/dri/tls/swrast_dri.so
@@ -192,12 +192,12 @@ wget --no-check-certificate https://sourceforge.net/projects/openfoam/files/v211
    [root@primary paraview_build]# yum remove  mesa-libGL
    [root@primary paraview_build]# ./bin/
    paraview                    pvdataserver                smTestDriver                vtkH5make_libsettings       vtkParseJava-pv5.6          vtkWrapHierarchy-pv5.6      vtkWrapPython-pv5.6
-   paraview-config             pvrenderserver              TestingDemo                 vtkkwProcessXML-pv5.6       vtkProbeOpenGLVersion       vtkWrapJava-pv5.6           
-   protoc                      pvserver                    vtkH5detect                 vtkLegacyColorMapXMLToJSON  vtkWrapClientServer-pv5.6   vtkWrapPythonInit-pv5.6     
+   paraview-config             pvrenderserver              TestingDemo                 vtkkwProcessXML-pv5.6       vtkProbeOpenGLVersion       vtkWrapJava-pv5.6
+   protoc                      pvserver                    vtkH5detect                 vtkLegacyColorMapXMLToJSON  vtkWrapClientServer-pv5.6   vtkWrapPythonInit-pv5.6
    [root@primary paraview_build]# ./bin/vtk
-   vtkH5detect                 vtkkwProcessXML-pv5.6       vtkParseJava-pv5.6          vtkWrapClientServer-pv5.6   vtkWrapJava-pv5.6           vtkWrapPython-pv5.6         
-   vtkH5make_libsettings       vtkLegacyColorMapXMLToJSON  vtkProbeOpenGLVersion       vtkWrapHierarchy-pv5.6      vtkWrapPythonInit-pv5.6     
-   [root@primary paraview_build]# ./bin/vtkProbeOpenGLVersion 
+   vtkH5detect                 vtkkwProcessXML-pv5.6       vtkParseJava-pv5.6          vtkWrapClientServer-pv5.6   vtkWrapJava-pv5.6           vtkWrapPython-pv5.6
+   vtkH5make_libsettings       vtkLegacyColorMapXMLToJSON  vtkProbeOpenGLVersion       vtkWrapHierarchy-pv5.6      vtkWrapPythonInit-pv5.6
+   [root@primary paraview_build]# ./bin/vtkProbeOpenGLVersion
    ./bin/vtkProbeOpenGLVersion: error while loading shared libraries: libGLX.so.0: cannot open shared object file: No such file or directory
    ```
 
@@ -205,4 +205,3 @@ wget --no-check-certificate https://sourceforge.net/projects/openfoam/files/v211
    yum install  glxinfo
    ```
 
-   

@@ -8,7 +8,7 @@ Let us imagine that there is a component called transfers that needs to obtain i
 
 
 
-## What is an anti-corruption layer? 
+## What is an anti-corruption layer?
 
 
 
@@ -18,7 +18,7 @@ The **anti-corruption layer (ACL)** is a strategic pattern in the DDD world. It 
 
 
 
-![image-20220507224711067](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507224711067.png)
+![image-20220507224711067](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507224711067.png)
 
 
 
@@ -30,7 +30,7 @@ Not only does the anti-corruption layer help to avoid the messing up of a model,
 
 
 
-![image-20220507230639822](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507230639822.png)
+![image-20220507230639822](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507230639822.png)
 
 
 
@@ -38,7 +38,7 @@ Now, the external service changes the message with the removal of a field. This 
 
 
 
-![image-20220507230658415](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507230658415.png)
+![image-20220507230658415](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507230658415.png)
 
 
 
@@ -46,7 +46,7 @@ In this case, the core business logic remains in the same state. The anti-corrup
 
 
 
-## Summary 
+## Summary
 
 
 

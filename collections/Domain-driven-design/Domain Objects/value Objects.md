@@ -16,7 +16,7 @@ A **value object** is a representation of something that is involved in a busine
 
 
 
-![image-20220508170608729](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220508170608729.png)
+![image-20220508170608729](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220508170608729.png)
 
 
 
@@ -57,13 +57,13 @@ It is possible to create a value object, called `Amount`, that deals with the lo
 
 
 
-![image-20220508170857670](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220508170857670.png)
+![image-20220508170857670](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220508170857670.png)
 
 
 
 A `Transfer` entity is created to encapsulate the business logic. Additionally, an `Amount` value object is created to control the logic related to amount. To test it, a `main` method is created. Functionality is the same as in the [previous lesson](https://www.educative.io/pageeditor/10370001/4616975235416064/5125176678678528) but in this case, the amount is validated in the `Amount` object. The `main` method creates a `Transfer` object when it passes an `id`, the present-day `date`, an `amount`, and an `accountId`. After this, it executes the following methods:
 
- 
+
 
 
 

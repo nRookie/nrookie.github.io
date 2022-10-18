@@ -6,27 +6,27 @@ A big ball of mud implementation tends to grow out of control and is difficult t
 
 
 
-## What is an aggregate? 
+## What is an aggregate?
 
 
 
 An **aggregate object** is a cluster of entities and value objects that are treated as a single unit from the domain and data perspective. This object acts as a load balancer for accessing a set of nodes. This means that an aggregate is the only access point for external objects. As the image below shows, an aggregate has clear bounds and the artifacts inside it cannot interact with the outside world:
 
-![image-20220508172634658](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220508172634658.png)
+![image-20220508172634658](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220508172634658.png)
 
 
 
-### Accessing functionalities to internal artifacts 
+### Accessing functionalities to internal artifacts
 
 An aggregate orchestrates the logic among all of the value objects and entities that are within its limits. When an object outside of the aggregate bounds wants to execute the business logic of entities or value objects inside the aggregate bounds, it should do this through that aggregate. Therefore, an aggregate should expose a type of interface that allows external objects to reach the functionalities inside it. To understand this behavior, let us look at an image where an artifact wants to execute a method located in an entity. The artifact must pass through an aggregate:
 
 
 
-![image-20220508175557438](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220508175557438.png)
+![image-20220508175557438](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220508175557438.png)
 
 
 
-### Changing information with aggregates 
+### Changing information with aggregates
 
 The set of an aggregate, its entities, and value objects should be treated as a single unit. Information related to these artifacts must travel back and forth between the bounded context and its repository, as a whole. It should be impossible to process a piece of information related to an entity or value objects, separately. An aggregate related to the aggregate example item is as follows. It comprises a main object called `transaction` and two main attributes. These attributes are the `amount` value object and the `transfer` entity:
 
@@ -73,7 +73,7 @@ In this case, an aggregate called `Transaction` is introduced to put objects tog
 
 
 
-![image-20220508175737359](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220508175737359.png)
+![image-20220508175737359](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220508175737359.png)
 
 
 

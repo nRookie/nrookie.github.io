@@ -4,12 +4,12 @@
 
 
 
-<img src="/Users/user/playground/share/nrookie.github.io/collections/parallel_computing/image-20211108150234046.png" alt="image-20211108150234046" style="zoom:50%;" />
+<img src="/Users/kestrel/developer/nrookie.github.io/collections/parallel_computing/image-20211108150234046.png" alt="image-20211108150234046" style="zoom:50%;" />
 
 
 
-![image-20211108150256916](/Users/user/playground/share/nrookie.github.io/collections/parallel_computing/image-20211108150256916.png)
+![image-20211108150256916](/Users/kestrel/developer/nrookie.github.io/collections/parallel_computing/image-20211108150256916.png)
 
 
 
-<img src="/Users/user/playground/share/nrookie.github.io/collections/parallel_computing/image-20211108154046293.png" alt="image-20211108154046293" style="zoom:50%;" />
+<img src="/Users/kestrel/developer/nrookie.github.io/collections/parallel_computing/image-20211108154046293.png" alt="image-20211108154046293" style="zoom:50%;" />

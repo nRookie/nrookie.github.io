@@ -10,7 +10,7 @@ Imagine a situation in which it is necessary to translate a word into two differ
 
 
 
-## What is ubiquitous language? 
+## What is ubiquitous language?
 
 When a domain is modeled, for instance, during an event storming session, business experts may use business jargon and technical experts may use technical jargon. This will require both sides to translate the terms between these two worlds, and may cause mistranslations and misinterpretations of certain terms.
 
@@ -24,7 +24,7 @@ To solve this problem of a difference in technical and business language, DDD of
 
 
 
-![image-20220507220835027](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507220835027.png)
+![image-20220507220835027](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507220835027.png)
 
 
 
@@ -34,16 +34,16 @@ To solve this problem of a difference in technical and business language, DDD of
 
 DDD suggests that domain and technical experts must be in constant communication during the construction process of any software. Nonetheless, this leads to further difficulties.
 
- 
+
 
 
 
 1. Technical experts need to learn multiple business terms that they are not familiar with. A company may use several different terms, across all of its teams. To memorize and understand those terms is a laborious task. The image below shows an example of banking services with different business processes or subdomains. Each subdomain uses its own terminology. Now, the technical experts must also be able to comprehend these terms.
-2. ![image-20220507220955677](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507220955677.png)
+2. ![image-20220507220955677](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507220955677.png)
 3. A term may appear in different subdomains. This may lead to a misunderstanding of the meaning of certain words, because the meaning for one word in one subdomain is not the same as the meaning of that word in another subdomain. As the image below shows, the term “credit” appears in the subdomains: “Credit cards” and “Saving accounts”. However, the meaning of this term is different in each of them. Credit in the “Credit cards” subdomain means to reduce the limit of that credit card. Whereas, in the “Saving accounts” subdomain, credit means to add money to an account.
-4. ![image-20220507221218911](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507221218911.png)
+4. ![image-20220507221218911](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507221218911.png)
 5. Technical experts tend to translate business concepts into technical terms. This is not a good practice, because it can cause technical experts to misunderstand the domain through the translation.
-6. ![image-20220507221306934](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507221306934.png)
+6. ![image-20220507221306934](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507221306934.png)
 
 ### How to tackle communication challenges
 

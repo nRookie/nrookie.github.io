@@ -18,7 +18,7 @@ Despite the help that it offers in the creation of aggregates, a factory does no
 
 
 
-![image-20220509114300210](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509114300210.png)
+![image-20220509114300210](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509114300210.png)
 
 
 
@@ -47,7 +47,7 @@ Let us continue with the example that we looked at in the lesson on repositories
 
 
 
-![image-20220509115116454](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509115116454.png)
+![image-20220509115116454](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509115116454.png)
 
 
 

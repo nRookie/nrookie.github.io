@@ -78,7 +78,7 @@ The CPU control unit transforms a logical address into a linear address by means
 
 
 
-![image-20211202163928286](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202163928286.png)
+![image-20211202163928286](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202163928286.png)
 
 
 
@@ -150,7 +150,7 @@ Each segment is represented by an 8-byte Segment Descriptor (see Figure 2-2) tha
 
 
 
-![image-20211202164413014](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202164413014.png)
+![image-20211202164413014](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202164413014.png)
 
 
 
@@ -248,7 +248,7 @@ To speed up the translation of logical addresses into linear addresses, the Inte
 - A TI (Table Indicator) flag that specifies whether the Segment Descriptor is included in the GDT (TI = 0) or in the LDT (TI = 1)
 - An RPL (Requestor Privilege Level ) 2-bit field, which is precisely the Current Privilege Level of the CPU when the corresponding Segment Selector is loaded into the cs register[1]
 
-![image-20211202165604176](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202165604176.png)
+![image-20211202165604176](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202165604176.png)
 
 
 
@@ -274,7 +274,7 @@ The first entry of the GDT is always set to 0: this ensures that logical address
 - Computes the address of the Segment Descriptor from the index field of the Segment Selector. The index field is multiplied by 8 (the size of a Segment Descriptor), and the result is added to the content of the gdtr or ldtr register.
 - Adds to the Base field of the Segment Descriptor the offset of the logical address, thus obtains the linear address.
 
-![image-20211202170253229](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202170253229.png)
+![image-20211202170253229](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202170253229.png)
 
 
 
@@ -488,7 +488,7 @@ The physical address of the Page Directory in use is stored in the **cr3** proce
 
 
 
-![image-20211202175914201](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202175914201.png)
+![image-20211202175914201](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202175914201.png)
 
 
 
@@ -588,7 +588,7 @@ Starting with the Pentium model, Intel 80x86 microprocessors introduce extended 
 
 
 
-![image-20211202181346198](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202181346198.png)
+![image-20211202181346198](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202181346198.png)
 
 
 
@@ -659,7 +659,7 @@ Let us start with the 10 most significant bits of the linear addresses assigned 
 
 
 
-![image-20211202181900991](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202181900991.png)
+![image-20211202181900991](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202181900991.png)
 
 
 
@@ -769,7 +769,7 @@ As shown in Figure 2-8, the cache unit is inserted between the paging unit and t
 
 
 
-![image-20211202195225835](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202195225835.png)
+![image-20211202195225835](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211202195225835.png)
 
 When accessing a RAM memory cell, the CPU extracts the subset index from the physical address and compares the tags of all lines in the subset with the high-order bits of the physical, address. If a line with the same tag as the high-order bits of the address is found, the CPU has
 
@@ -890,7 +890,7 @@ The **Page Global Directory** includes the addresses of several Page Middle Dire
 
 
 
-![image-20211203103619125](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211203103619125.png)
+![image-20211203103619125](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211203103619125.png)
 
 
 
@@ -1147,7 +1147,7 @@ Figure 2-10 shows how the first 2 MB of RAM are filled by Linux. We have assumed
 
 
 
-![image-20211203105834679](/Users/user/playground/share/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211203105834679.png)
+![image-20211203105834679](/Users/kestrel/developer/nrookie.github.io/collections/HPC/Prof Dr - Ing Morris Riedel/image-20211203105834679.png)
 
 
 

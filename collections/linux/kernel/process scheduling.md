@@ -86,7 +86,7 @@ The two classifications we just offered are somewhat independent. For instance, 
 
 Programmers may change the scheduling parameters by means of the system calls illustrated in Table 10-1. More details will be given in Section 10.3.
 
-![image-20211206113421917](/Users/user/playground/share/nrookie.github.io/collections/linux/kernel/image-20211206113421917.png)
+![image-20211206113421917](/Users/kestrel/developer/nrookie.github.io/collections/linux/kernel/image-20211206113421917.png)
 
 
 
@@ -178,7 +178,7 @@ Users rarely change the base time quantum of their processes, so DEF_PRIORITY al
 
 In order to select a process to run, the Linux scheduler must consider the priority of each process. Actually, there are two kinds of priority:
 
- 
+
 
 #### Static priority
 
@@ -535,7 +535,7 @@ if (prev != next) {
 return;
 ```
 
- 
+
 
 Notice that the return statement that exits from schedule( ) will not be performed right away by the next process but at a later time by the prev one when the scheduler selects it again for execution.
 
@@ -755,7 +755,7 @@ The scheduling algorithm of Linux is both self-contained and relatively easy to 
 
 Let us try to outline some pitfalls of the Linux scheduler. As it will turn out, some of these limitations become significant on large systems with many users. On a single workstation that is running a few tens of processes at a time, the Linux scheduler is quite efficient. Since Linux was born on an Intel 80386 and continues to be most popular in the PC world, we consider the current Linux scheduler quite appropriate.
 
- 
+
 
 
 

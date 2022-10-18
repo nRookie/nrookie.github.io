@@ -84,13 +84,13 @@ multiple cores and vector instrcution support.
 
 
 
-<img src="/Users/user/playground/share/nrookie.github.io/collections/parallel_computing/image-20211108181959466.png" alt="image-20211108181959466" style="zoom:50%;" />
+<img src="/Users/kestrel/developer/nrookie.github.io/collections/parallel_computing/image-20211108181959466.png" alt="image-20211108181959466" style="zoom:50%;" />
 
 
 
 
 
-<img src="/Users/user/playground/share/nrookie.github.io/collections/parallel_computing/image-20211108182153002.png" alt="image-20211108182153002" style="zoom:50%;" />
+<img src="/Users/kestrel/developer/nrookie.github.io/collections/parallel_computing/image-20211108182153002.png" alt="image-20211108182153002" style="zoom:50%;" />
 
 
 

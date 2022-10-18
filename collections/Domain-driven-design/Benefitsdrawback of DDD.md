@@ -26,13 +26,13 @@ When a code is organized on the basis of hexagonal architecture, there is a laye
 
 
 
-![image-20220506225136993](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/image-20220506225136993.png)
+![image-20220506225136993](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/image-20220506225136993.png)
 
 
 
 
 
-### Relationship between business people and the development team 
+### Relationship between business people and the development team
 
 
 
@@ -76,7 +76,7 @@ As was mentioned previously, DDD only works on complex domains. Not only is it c
 
 
 
-![image-20220506225500263](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/image-20220506225500263.png)
+![image-20220506225500263](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/image-20220506225500263.png)
 
 
 
@@ -84,7 +84,7 @@ The image above shows how a big domain may be divided into several subdomains an
 
 
 
-![image-20220506225522225](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/image-20220506225522225.png)
+![image-20220506225522225](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/image-20220506225522225.png)
 
 
 

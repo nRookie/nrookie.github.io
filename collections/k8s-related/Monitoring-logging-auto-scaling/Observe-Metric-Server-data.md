@@ -4,7 +4,7 @@ When we request metrics through `kubectl top`, the flow of data is almost the sa
 
 
 
-![image-20220317004749896](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/Monitoring-logging-auto-scaling/image-20220317004749896.png)
+![image-20220317004749896](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/Monitoring-logging-auto-scaling/image-20220317004749896.png)
 
 
 
@@ -109,7 +109,7 @@ The essential parts of the definition are `resources`. Both the `api` and the `d
 ``` shell
 [root@10-23-75-240 k8s-specs]# kubectl apply \
 >     -f scaling/go-demo-5-no-sidecar-mem.yml \
-> 
+>
 namespace/go-demo-5 unchanged
 ingress.networking.k8s.io/api created
 serviceaccount/db unchanged
@@ -125,12 +125,12 @@ service/api created
 
 
 ``` shell
-│ Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s                                                                                                            
-│                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s                                                                                                          
-│ Events:                                                                                                                                                                                           
-│   Type     Reason            Age   From               Message                                                                                                                                     
-│   ----     ------            ----  ----               -------                                                                                                                                     
-│   Warning  FailedScheduling  37s   default-scheduler  0/3 nodes are available: 3 pod has unbound immediate PersistentVolumeClaims.  
+│ Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+│                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+│ Events:
+│   Type     Reason            Age   From               Message
+│   ----     ------            ----  ----               -------
+│   Warning  FailedScheduling  37s   default-scheduler  0/3 nodes are available: 3 pod has unbound immediate PersistentVolumeClaims.
 ```
 
 

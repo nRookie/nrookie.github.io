@@ -18,7 +18,7 @@ When there are many bounded contexts in an organization, it is important to mana
 
 
 
-![image-20220507223235885](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507223235885.png)
+![image-20220507223235885](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507223235885.png)
 
 
 
@@ -32,7 +32,7 @@ They are a visual representation of the relationships that are present between d
 
 
 
-### Types of relationships among bounded contexts 
+### Types of relationships among bounded contexts
 
 
 
@@ -49,7 +49,7 @@ The four main types of interactions that can appear in relationships among bound
 
 
 
-![image-20220507224051504](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507224051504.png)
+![image-20220507224051504](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507224051504.png)
 
 
 
@@ -70,7 +70,7 @@ It is possible to label relationships to give information about them. This infor
 
 
 
-### Benefits of contexts maps 
+### Benefits of contexts maps
 
 
 

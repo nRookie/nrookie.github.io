@@ -8,7 +8,7 @@ The following diagram depicts the port layer, which defines four artifacts. Addi
 
 
 
-![image-20220510165911672](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510165911672.png)
+![image-20220510165911672](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510165911672.png)
 
 
 
@@ -41,4 +41,4 @@ https://www.c-sharpcorner.com/UploadFile/ff2f08/association-aggregation-and-comp
 
 
 
-![image-20220510173007559](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510173007559.png)
+![image-20220510173007559](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220510173007559.png)

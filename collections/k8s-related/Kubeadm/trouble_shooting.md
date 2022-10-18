@@ -373,3 +373,9 @@ kubectl apply -f https://github.com/antrea-io/antrea/releases/download/v1.5.2/an
 
 
 
+
+
+### Kube init failed unknown service runtime.v1alpha2.RuntimeService
+
+https://github.com/kubernetes-sigs/cri-tools/issues/710
+

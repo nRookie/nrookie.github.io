@@ -6,3 +6,6 @@ Distributed systems can use Consistent Hashing to distribute data across nodes. 
 
 
 Consistent Hashing stores the data managed by a distributed system in a ring. Each node in the ring is assigned a range of data. Here is an example of the consistent hash ring:
+
+
+

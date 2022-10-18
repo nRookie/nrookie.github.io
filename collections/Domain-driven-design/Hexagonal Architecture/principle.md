@@ -32,7 +32,7 @@ There must be a clear separation of responsibilities. In every component, there 
 
 
 
-![image-20220509213354711](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220509213354711.png)
+![image-20220509213354711](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220509213354711.png)
 
 
 
@@ -42,7 +42,7 @@ There must be a clear separation of responsibilities. In every component, there 
 
 Layer boundaries must be clearly defined. To comply with this principle, it is good practice to define interfaces that expose functionalities and the data that is required to execute them. Dependency between the layers should be based on the interfaces.
 
-![image-20220509213630884](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220509213630884.png)
+![image-20220509213630884](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220509213630884.png)
 
 
 
@@ -54,7 +54,7 @@ Communication must always come from the outermost layer to the innermost one. Th
 
 
 
-![image-20220509213719922](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220509213719922.png)
+![image-20220509213719922](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Hexagonal Architecture/image-20220509213719922.png)
 
 
 

@@ -18,7 +18,7 @@
 
 
 
-![image-20211030100501666](/Users/user/playground/share/nrookie.github.io/collections/network/image-20211030100501666.png)
+![image-20211030100501666](/Users/kestrel/developer/nrookie.github.io/collections/network/image-20211030100501666.png)
 
 
 
@@ -38,7 +38,7 @@ INPUT：处理入站数据包
 
 OUTPUT：处理出站数据包
 
-FORWARD：处理转发数据包 
+FORWARD：处理转发数据包
 
 POSTROUTING：在进行路由选择后处理数据包（出站过滤）
 
@@ -72,7 +72,7 @@ filter表: 确定是否放行该数据包， 即过滤
 
 
 
-![image-20211030111636557](/Users/user/playground/share/nrookie.github.io/collections/network/route.png)
+![image-20211030111636557](/Users/kestrel/developer/nrookie.github.io/collections/network/route.png)
 
 ### iptables 匹配流程
 
@@ -98,7 +98,7 @@ filter表: 确定是否放行该数据包， 即过滤
 
 ## 匹配流程示意图
 
-![image-20211030113554123](/Users/user/playground/share/nrookie.github.io/collections/network/image-20211030113554123.png)
+![image-20211030113554123](/Users/kestrel/developer/nrookie.github.io/collections/network/image-20211030113554123.png)
 
 
 
@@ -182,7 +182,7 @@ ICMP类型匹配：--icmp-type ICMP类型
 
 
 常见的通用匹配条件
-多端口匹配：-m multiport --sports 源端口列表；-m multiport --dports 目的端口列表 
+多端口匹配：-m multiport --sports 源端口列表；-m multiport --dports 目的端口列表
 IP范围匹配：-m iprange-src-range IP范围
 MAC地址匹配：-m mac --mac-source MAC地址
 状态匹配：-m state --state 连接状态

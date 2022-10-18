@@ -105,14 +105,14 @@
        </memballoon>
      </devices>
    </domain>
-   
+
    ```
 
 
 
-![image-20220310155456047](/Users/user/playground/share/nrookie.github.io/collections/KVM/image-20220310155456047.png)
+![image-20220310155456047](/Users/kestrel/developer/nrookie.github.io/collections/KVM/image-20220310155456047.png)
 
-![image-20220310160204660](/Users/user/playground/share/nrookie.github.io/collections/KVM/image-20220310160204660.png)
+![image-20220310160204660](/Users/kestrel/developer/nrookie.github.io/collections/KVM/image-20220310160204660.png)
 
 
 
@@ -177,7 +177,7 @@
       <serial>UCLOUD_DISK_VDA</serial>
       <address type='pci' domain='0x0000' bus='0x00' slot='0x06' function='0x0'/>
     </disk>
-    
+
     <controller type='usb' index='0' model='piix3-uhci'>
       <address type='pci' domain='0x0000' bus='0x00' slot='0x01' function='0x2'/>
     </controller>
@@ -229,11 +229,11 @@
 
 
 
-USB, PCI and SCSI devices attached to the host can be passed through to the guest using the hosted element. 
+USB, PCI and SCSI devices attached to the host can be passed through to the guest using the hosted element.
 
 
 
-**hostdev** 
+**hostdev**
 
 The hostdev element is the main container for describing host devices. For each device, the mode is always "subsystem" and the type is one of the following values with additional attributes noted.
 
@@ -263,7 +263,7 @@ The address element for USB devices has a bus and device attribute to specify th
 
 
 
-![image-20220310165623274](/Users/user/playground/share/nrookie.github.io/collections/KVM/image-20220310165623274.png)
+![image-20220310165623274](/Users/kestrel/developer/nrookie.github.io/collections/KVM/image-20220310165623274.png)
 
 
 

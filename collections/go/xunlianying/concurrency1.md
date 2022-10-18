@@ -1,20 +1,20 @@
-![image-20220317173652121](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317173652121.png)
+![image-20220317173652121](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317173652121.png)
 
 
 
-![image-20220317184756843](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317184756843.png)
+![image-20220317184756843](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317184756843.png)
 
 
 
-![image-20220317184936930](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317184936930.png)
+![image-20220317184936930](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317184936930.png)
 
 
 
-![image-20220317185218196](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317185218196.png)
+![image-20220317185218196](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317185218196.png)
 
 
 
-![image-20220317185419743](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317185419743.png)
+![image-20220317185419743](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317185419743.png)
 
 ``` shell
 go tool compile -S setlimit-example.go
@@ -47,7 +47,7 @@ Goroutine 7 (running) created at:
   main.main()
       /Users/user/developer/design-pattern/gonjinjie/concurrency/race_condition_example/main.go:16 +0x60
 ==================
-Final Counter : 2 
+Final Counter : 2
 Found 1 data race(s)
 ```
 
@@ -90,25 +90,25 @@ func Routine(id int) {
 
 
 
-![image-20220317191916356](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317191916356.png)
+![image-20220317191916356](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317191916356.png)
 
 
 
-![image-20220317192107725](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317192107725.png)
+![image-20220317192107725](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317192107725.png)
 
 
 
 
 
-![image-20220317192223134](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317192223134.png)
+![image-20220317192223134](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317192223134.png)
 
 
 
-![image-20220317193129022](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317193129022.png)
+![image-20220317193129022](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317193129022.png)
 
 
 
-![image-20220317193343884](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317193343884.png)
+![image-20220317193343884](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317193343884.png)
 
 
 
@@ -120,59 +120,59 @@ func Routine(id int) {
 
 
 
-![image-20220317194213769](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317194213769.png)
+![image-20220317194213769](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317194213769.png)
 
 
 
 ``` shell
- go test -bench 
+ go test -bench
 ```
 
 
 
-![image-20220317195352267](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317195352267.png)
+![image-20220317195352267](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317195352267.png)
 
 
 
-![image-20220317195703499](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317195703499.png)
-
-
-
-
-
-
-
-![image-20220317200233670](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317200233670.png)
+![image-20220317195703499](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317195703499.png)
 
 
 
 
 
-![image-20220317200855509](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317200855509.png)
 
 
-
-![image-20220317202318263](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317202318263.png)
-
-
-
-![image-20220317203847762](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317203847762.png)
+![image-20220317200233670](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317200233670.png)
 
 
 
 
 
-![image-20220317204012795](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317204012795.png)
+![image-20220317200855509](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317200855509.png)
 
 
 
-![image-20220317210244421](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317210244421.png)
+![image-20220317202318263](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317202318263.png)
+
+
+
+![image-20220317203847762](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317203847762.png)
 
 
 
 
 
-![image-20220317211212396](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/image-20220317211212396.png)
+![image-20220317204012795](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317204012795.png)
+
+
+
+![image-20220317210244421](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317210244421.png)
+
+
+
+
+
+![image-20220317211212396](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/image-20220317211212396.png)
 
 
 

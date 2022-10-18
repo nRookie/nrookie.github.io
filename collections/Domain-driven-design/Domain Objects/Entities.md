@@ -40,7 +40,7 @@ In the context of DDD, an **entity** represents something that is involved in a 
 
 
 
-![image-20220508163743878](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220508163743878.png)
+![image-20220508163743878](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220508163743878.png)
 
 
 
@@ -74,7 +74,7 @@ Let us assume that there is a need to make a transfer between two banks. In this
 
 The model is as follows:
 
-![image-20220508164523129](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220508164523129.png)
+![image-20220508164523129](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Objects/image-20220508164523129.png)
 
 A `Transfer` entity is created to encapsulate the business logic. To test it, a `main` method is created. According to the `Transfer` constructor, the `main` method creates a `Transfer` object when it passes an `id`, the present-day `date`, an `amount`, and an `accountId`. After this, it executes the following methods:
 

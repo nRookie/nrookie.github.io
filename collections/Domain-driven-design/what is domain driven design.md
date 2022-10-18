@@ -4,7 +4,7 @@ When a company acquires big projects, which are complex in terms of analysis and
 
 
 
-## What are the goals of DDD? 
+## What are the goals of DDD?
 
 
 
@@ -16,7 +16,7 @@ One of the book’s main goals is to outline how to develop software based on an
 
 
 
-![image-20220506223705152](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/image-20220506223705152.png)
+![image-20220506223705152](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/image-20220506223705152.png)
 
 
 
@@ -35,13 +35,13 @@ DDD seeks to satisfy three main topics, which are very simple:
 
 
 1. When designing and developing software that will support some business process in a company, the most important way to approach it is by modeling the domain and every subdomain, rather than defining the technological stack. In many cases, technical experts tend to think of it as a technology instead of a business at the beginning of the project. They may think of it as a database name, a server name, or even a programming language. These aspects are not relevant to DDD when the project starts. The most important aspect from the DDD perspective is domain modeling.
-2. ![image-20220506223922683](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/image-20220506223922683.png)
+2. ![image-20220506223922683](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/image-20220506223922683.png)
 3. s was mentioned before, DDD is appropriate for dealing with complex domains. Thus, when a team analyzes a domain and creates the domain model, the team should break the domain into smaller pieces called subdomains. The team should, then, comprehend these subdomains to build the best model, which will represent the business processes.
 4. DDD is oriented to work with agile methodologies, such as **Scrum**. This is why the concept of **Minimum Viable Product (MVP)** fits in perfectly with DDD. The most important step is to create a basic model that everyone understands. Another important consideration is to create a model that everyone can evolve sprint by sprint, until a complete product is formed.
 
 
 
-### Building blocks of Domain-Driven Design 
+### Building blocks of Domain-Driven Design
 
 DDD defines some concepts that can be used to meet its restrictions. These concepts will be covered in more detail in the upcoming lessons but, for now, they will only be listed:
 
@@ -63,7 +63,7 @@ DDD defines some concepts that can be used to meet its restrictions. These conce
 
 The strategic approach should be the first approach that was tackled during the implementation of DDD. This approach addresses the efforts made in trying to model a domain, and gives us patterns and ways to achieve the goals that DDD sets out. Think of it as the general way to deal with the problem. It applies to every piece of the model and spans across many subdomains. In this approach, there are design patterns, such as bounded context and ubiquitous language.
 
-![image-20220506224538861](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/image-20220506224538861.png)
+![image-20220506224538861](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/image-20220506224538861.png)
 
 
 
@@ -75,13 +75,13 @@ The image above shows how the strategic approach involves different components.
 
 
 
-### Tactical approach 
+### Tactical approach
 
 
 
 The tactical approach involves the translation of the model into specific pieces of software. It only applies to a specific component or part of the model. This approach tries to solve the challenges that arise when the development process of a specific component is underway. It gives us design patterns to develop components, including the **aggregate pattern** or the **repository pattern**. These will be covered in more detail in the upcoming chapters.
 
-![image-20220506224629372](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/image-20220506224629372.png)
+![image-20220506224629372](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/image-20220506224629372.png)
 
 
 

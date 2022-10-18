@@ -36,13 +36,13 @@ Some requirements should be met for us to be successful at event storming:
 
 
 
-### Required elements in an event storming session 
+### Required elements in an event storming session
 
 Let us begin with an effort to analyse and understand each part of an example. Suppose there is a bank with a subdomain, transfers. A customer wants to transfer money from bank A to bank B. The image below shows what a transfer looks like from an event storming perspective.
 
 
 
-![image-20220507214135384](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507214135384.png)
+![image-20220507214135384](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507214135384.png)
 
 
 
@@ -75,7 +75,7 @@ A few steps must be followed for a successful event storming session to take pla
 
    > We are not required to strictly follow the steps given below:
    >
-   > 
+   >
 
 4. Map external services, questions, and actors.
 5. Map the aggregates and the read model.
@@ -83,29 +83,29 @@ A few steps must be followed for a successful event storming session to take pla
 
 
 
-![image-20220507215347447](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507215347447.png)
+![image-20220507215347447](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507215347447.png)
 
 
 
-![image-20220507215426584](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507215426584.png)
+![image-20220507215426584](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507215426584.png)
 
 
 
-![image-20220507215445082](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507215445082.png)
+![image-20220507215445082](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507215445082.png)
 
 
 
-![image-20220507215520607](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507215520607.png)
+![image-20220507215520607](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507215520607.png)
 
 
 
 
 
-![image-20220507215543216](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507215543216.png)
+![image-20220507215543216](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507215543216.png)
 
 
 
-![image-20220507215616374](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507215616374.png)
+![image-20220507215616374](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Mapping-domain-to-model/image-20220507215616374.png)
 
 
 

@@ -22,7 +22,7 @@ First of all, these objects are called **domain services** in the context of DDD
 
 Domain services should meet the following characteristics to be well-defined and isolated from the domain model:
 
- 
+
 
 - They should be stateless. They should not maintain information between calls. Once an execution is completed, all of the information related to the execution should disappear.
 - They can produce domain events. This may, in turn, cause the execution of other bounded contexts.
@@ -43,7 +43,7 @@ The model will be as follows:
 
 
 
-![image-20220509164330944](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509164330944.png)
+![image-20220509164330944](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509164330944.png)
 
 When the `Sells` object is instantiated, it creates all of the dependencies that it needs to execute its work. To test it, a `main` method creates a `Sell` object and executes its `GenerateBill()` method. Once this method is executed, it prints a message simulating that an email is sent.
 
@@ -63,19 +63,19 @@ Domain services implement business logic that cannot be placed in other domain o
 
 
 
-![image-20220509171345285](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509171345285.png)
+![image-20220509171345285](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509171345285.png)
 
 
 
 
 
-![image-20220509171403835](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509171403835.png)
+![image-20220509171403835](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509171403835.png)
 
 
 
 
 
-![image-20220509172656280](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509172656280.png)
+![image-20220509172656280](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain abstraction/image-20220509172656280.png)
 
 
 

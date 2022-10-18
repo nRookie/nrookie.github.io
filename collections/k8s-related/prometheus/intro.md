@@ -24,5 +24,5 @@ We’ll see how all those pieces fit together through hands-on exercises. So, le
 
 
 
-![image-20220403185732954](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/prometheus/image-20220403185732954.png)
+![image-20220403185732954](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/prometheus/image-20220403185732954.png)
 

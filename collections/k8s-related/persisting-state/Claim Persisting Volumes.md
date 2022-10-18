@@ -15,7 +15,7 @@ We’ll use `pv/pvc.yml` to explore how we could claim a persistent volume.
 
 
 ``` shell
-[root@10-23-75-240 k8s-specs]# vi pv/nfs-pv.yml 
+[root@10-23-75-240 k8s-specs]# vi pv/nfs-pv.yml
 
 apiVersion: v1
 kind: PersistentVolume
@@ -47,7 +47,7 @@ Bear in mind that `resources` do not have to be the exact match. Any volume that
 
 
 ``` shell
- vi pv/nfs-pvc.yml 
+ vi pv/nfs-pvc.yml
 
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -63,7 +63,7 @@ spec:
       storage: 1Gi
 
 
-[root@10-23-75-240 k8s-specs]# kubectl create -f pv/nfs-pvc.yml 
+[root@10-23-75-240 k8s-specs]# kubectl create -f pv/nfs-pvc.yml
 persistentvolumeclaim/jenkins created
 
 ```
@@ -71,38 +71,38 @@ persistentvolumeclaim/jenkins created
 
 
 ``` shell
-│ Name:            jenkins                                                                                                                                      
-│ Labels:          author=qing.na                                                                                                                               
-│                  type=local                                                                                                                                   
-│ Annotations:     <none>                                                                                                                                       
-│ Finalizers:      [kubernetes.io/pv-protection]                                                                                                                
-│ StorageClass:    manual                                                                                                                                       
-│ Status:          Available                                                                                                                                    
-│ Claim:                                                                                                                                                        
-│ Reclaim Policy:  Retain                                                                                                                                       
-│ Access Modes:    RWX                                                                                                                                          
-│ VolumeMode:      Filesystem                                                                                                                                   
-│ Capacity:        40Gi                                                                                                                                         
-│ Node Affinity:   <none>                                                                                                                                       
-│ Message:                                                                                                                                                      
-│ Source:                                                                                                                                                       
-│     Type:      NFS (an NFS mount that lasts the lifetime of a pod)                                                                                            
-│     Server:    172.16.0.51                                                                                                                                    
-│     Path:      /data/                                                                                                                                         
-│     ReadOnly:  false                                                                                                                                          
-│ Events:        <none>                                                                                                                                         
-│                                                                                                                                                               
-│                              
+│ Name:            jenkins
+│ Labels:          author=qing.na
+│                  type=local
+│ Annotations:     <none>
+│ Finalizers:      [kubernetes.io/pv-protection]
+│ StorageClass:    manual
+│ Status:          Available
+│ Claim:
+│ Reclaim Policy:  Retain
+│ Access Modes:    RWX
+│ VolumeMode:      Filesystem
+│ Capacity:        40Gi
+│ Node Affinity:   <none>
+│ Message:
+│ Source:
+│     Type:      NFS (an NFS mount that lasts the lifetime of a pod)
+│     Server:    172.16.0.51
+│     Path:      /data/
+│     ReadOnly:  false
+│ Events:        <none>
+│
+│
 ```
 
 
 
 ``` shell
-Used By:       <none>                                                                                                                                         
-│ Events:                                                                                                                                                       
-│   Type     Reason              Age   From                         Message                                                                                     
-│   ----     ------              ----  ----                         -------                                                                                     
-│   Warning  ProvisioningFailed  5s    persistentvolume-controller  storageclass.storage.k8s.io "manual" not found    
+Used By:       <none>
+│ Events:
+│   Type     Reason              Age   From                         Message
+│   ----     ------              ----  ----                         -------
+│   Warning  ProvisioningFailed  5s    persistentvolume-controller  storageclass.storage.k8s.io "manual" not found
 ```
 
 https://stackoverflow.com/questions/49174300/storageclass-storage-k8s-io-standard-not-found-for-pvc-on-bare-metal-kubernete
@@ -123,7 +123,7 @@ parameters:
 
 
 ``` shel
-[root@10-23-75-240 k8s-specs]# kubectl apply -f pv/nfs-pv.yml 
+[root@10-23-75-240 k8s-specs]# kubectl apply -f pv/nfs-pv.yml
 persistentvolume/jenkins configured
 storageclass.storage.k8s.io/manual created
 ```
@@ -131,11 +131,11 @@ storageclass.storage.k8s.io/manual created
 
 
 ``` shell
-│   Type     Reason                Age                   From                         Message                                                                   
-│   ----     ------                ----                  ----                         -------                                                                   
-│   Warning  ProvisioningFailed    25s (x11 over 2m53s)  persistentvolume-controller  storageclass.storage.k8s.io "manual" not found                            
-│   Normal   ExternalProvisioning  10s (x2 over 10s)     persistentvolume-controller  waiting for a volume to be created, either by external provisioner "pd.c  
-│ si.storage.gke.io" or manually created by system administrator   
+│   Type     Reason                Age                   From                         Message
+│   ----     ------                ----                  ----                         -------
+│   Warning  ProvisioningFailed    25s (x11 over 2m53s)  persistentvolume-controller  storageclass.storage.k8s.io "manual" not found
+│   Normal   ExternalProvisioning  10s (x2 over 10s)     persistentvolume-controller  waiting for a volume to be created, either by external provisioner "pd.c
+│ si.storage.gke.io" or manually created by system administrator
 ```
 
 
@@ -145,9 +145,9 @@ https://www.linuxtechi.com/configure-nfs-persistent-volume-kubernetes/
 
 
 ``` shell
-│ Events:                                                                                                                                                       
-│   Type     Reason              Age   From                         Message                                                                                     
-│   ----     ------              ----  ----                         -------                                                                                     
+│ Events:
+│   Type     Reason              Age   From                         Message
+│   ----     ------              ----  ----                         -------
 │   Warning  ProvisioningFailed  4s    persistentvolume-controller  storageclass.storage.k8s.io "nfs" not found
 ```
 
@@ -183,12 +183,12 @@ https://kubernetes.io/docs/concepts/storage/storage-classes/#nfs
 
 
 ``` shell
-   Type     Reason                Age                   From                         Message                                                                   
-│   ----     ------                ----                  ----                         -------                                                                   
-│   Warning  ProvisioningFailed    15s (x19 over 4m41s)  persistentvolume-controller  storageclass.storage.k8s.io "nfs" not found                               
-│   Normal   ExternalProvisioning  0s (x2 over 0s)       persistentvolume-controller  waiting for a volume to be created, either by external provisioner "exam  
-│ ple.com/external-nfs" or manually created by system administrator                                                                                             
-│                                                                                 
+   Type     Reason                Age                   From                         Message
+│   ----     ------                ----                  ----                         -------
+│   Warning  ProvisioningFailed    15s (x19 over 4m41s)  persistentvolume-controller  storageclass.storage.k8s.io "nfs" not found
+│   Normal   ExternalProvisioning  0s (x2 over 0s)       persistentvolume-controller  waiting for a volume to be created, either by external provisioner "exam
+│ ple.com/external-nfs" or manually created by system administrator
+│
 ```
 
 
@@ -216,7 +216,7 @@ TEST SUITE: None
 
 
 ``` shell
-[root@10-23-75-240 k8s-specs]# helm install nfs-subdir-external-provisioner nfs-subdir-external-provisioner/nfs-subdir-external-provisioner  --namespace jenkins    --set nfs.server=172.16.0.51    --set nfs.path=/data 
+[root@10-23-75-240 k8s-specs]# helm install nfs-subdir-external-provisioner nfs-subdir-external-provisioner/nfs-subdir-external-provisioner  --namespace jenkins    --set nfs.server=172.16.0.51    --set nfs.path=/data
 NAME: nfs-subdir-external-provisioner
 LAST DEPLOYED: Thu Mar 17 02:11:33 2022
 NAMESPACE: jenkins
@@ -228,7 +228,7 @@ TEST SUITE: None
 
 
 
-![image-20220317022304265](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/persisting-state/image-20220317022304265.png)
+![image-20220317022304265](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/persisting-state/image-20220317022304265.png)
 
 ``` shell
 [root@10-23-75-240 k8s-specs]# yum -y install nfs-utils
@@ -260,14 +260,14 @@ still not working
 
 
 
-![image-20220321091408451](/Users/user/playground/share/nrookie.github.io/collections/k8s-related/persisting-state/image-20220321091408451.png)
+![image-20220321091408451](/Users/kestrel/developer/nrookie.github.io/collections/k8s-related/persisting-state/image-20220321091408451.png)
 
 
 
 
 
 ``` yaml
-[root@10-23-75-240 k8s-specs]# cat pv/nfs-pvc.yml 
+[root@10-23-75-240 k8s-specs]# cat pv/nfs-pvc.yml
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
@@ -281,8 +281,8 @@ spec:
     requests:
       storage: 10Gi
 [root@10-23-75-240 k8s-specs]# cat pv/nfs-pv
-nfs-pvc.yml  nfs-pv.yml   
-[root@10-23-75-240 k8s-specs]# cat pv/nfs-pv.yml 
+nfs-pvc.yml  nfs-pv.yml
+[root@10-23-75-240 k8s-specs]# cat pv/nfs-pv.yml
 apiVersion: v1
 kind: PersistentVolume
 metadata:
@@ -306,7 +306,7 @@ spec:
     path: /data/
     server: 172.16.0.51
     readOnly: false
-[root@10-23-75-240 k8s-specs]# 
+[root@10-23-75-240 k8s-specs]#
 
 ```
 
@@ -315,7 +315,7 @@ spec:
 
 
 ``` yaml
-[root@10-23-75-240 k8s-specs]# cat pv/nfs-pvc.yml 
+[root@10-23-75-240 k8s-specs]# cat pv/nfs-pvc.yml
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
@@ -335,7 +335,7 @@ spec:
 
 
 ``` shell
-[root@10-23-75-240 k8s-specs]# cat pv/strclass.yml 
+[root@10-23-75-240 k8s-specs]# cat pv/strclass.yml
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:

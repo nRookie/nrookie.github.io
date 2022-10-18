@@ -6,7 +6,7 @@ Let us imagine a situation where a customer wants to execute an action in a boun
 
 
 
-![image-20220508144114382](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508144114382.png)
+![image-20220508144114382](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508144114382.png)
 
 
 
@@ -42,21 +42,21 @@ All of these operations change the state of the system. Let us look at an exampl
 
 1. The system does not have registered people:
 
-2. ![image-20220508144406670](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508144406670.png)
+2. ![image-20220508144406670](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508144406670.png)
 
 3. A 23 year-old user with the name DDD wants to sign up for the system. In this case, the system executes a **creation** command. The execution is successful and it creates a new record in the database. This is what a change of the state means. It is nothing but an alteration of some part of the system. In this case, the system is altered through the addition of a new record in the database.
 
-4. ![image-20220508144505675](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508144505675.png)
+4. ![image-20220508144505675](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508144505675.png)
 
 5. Suppose a year passes by, and the user DDD wants to update their age. They will execute an **update** command. Similar to the command of creation, the update will be executed successfully. Hence, the state of the system will be changed. In this case, there will be an alteration of a record in the database.
 
-6. ![image-20220508144554470](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508144554470.png)
+6. ![image-20220508144554470](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508144554470.png)
 
 7. Ultimately, the user DDD will want to end their subscription. Thus, they will execute a **delete** command. This will also be executed successfully, too. As a result, the system state will change again. In this case, a record will be deleted from the database.
 
-8. ![image-20220508144636700](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508144636700.png)
+8. ![image-20220508144636700](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508144636700.png)
 
-   
+
 
 
 
@@ -78,7 +78,7 @@ In this way, ubiquitous language works together with code.
 
 
 
-![image-20220508145024197](/Users/user/playground/share/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508145024197.png)
+![image-20220508145024197](/Users/kestrel/developer/nrookie.github.io/collections/Domain-driven-design/Domain Activities/image-20220508145024197.png)
 
 
 

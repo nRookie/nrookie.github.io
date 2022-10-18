@@ -1,14 +1,14 @@
-![image-20220320114052613](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320114052613.png)
+![image-20220320114052613](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320114052613.png)
 
 
 
-![image-20220320114329106](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320114329106.png)
+![image-20220320114329106](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320114329106.png)
 
-![image-20220320114512643](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320114512643.png)
+![image-20220320114512643](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320114512643.png)
 
 
 
-![image-20220320114838542](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320114838542.png)
+![image-20220320114838542](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320114838542.png)
 
 
 
@@ -28,7 +28,7 @@ Potentially it also enables the callers to use the zero value to signify they th
 
 
 
-![image-20220320114924594](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320114924594.png)
+![image-20220320114924594](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320114924594.png)
 
 
 
@@ -42,11 +42,11 @@ But this has the downside that you can no longer explicitly set `Port` to 0 and 
 
 
 
-![image-20220320115024790](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320115024790.png)
+![image-20220320115024790](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320115024790.png)
 
 
 
-![image-20220320115149740](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320115149740.png)
+![image-20220320115149740](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320115149740.png)
 
 
 
@@ -70,7 +70,7 @@ So now with these points in mind, I want to talk about what I believe are some b
 
 
 
-![image-20220320115318951](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320115318951.png)
+![image-20220320115318951](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320115318951.png)
 
 
 
@@ -96,7 +96,7 @@ I think that there is.
 
 
 
-![image-20220320115454222](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320115454222.png)
+![image-20220320115454222](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320115454222.png)
 
 
 
@@ -123,7 +123,7 @@ In the few minutes I have remaining I’d like to show you how I improved one of
 
 
 
-![image-20220320120432020](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320120432020.png)
+![image-20220320120432020](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320120432020.png)
 
 
 
@@ -155,11 +155,11 @@ We’ll take a look at how `Speed`, `RawMode`, and `Open`, are implemented on th
 
 
 
-![image-20220320120749902](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320120749902.png)
+![image-20220320120749902](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320120749902.png)
 
 
 
-![image-20220320121148471](/Users/user/playground/share/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320121148471.png)
+![image-20220320121148471](/Users/kestrel/developer/nrookie.github.io/collections/go/xunlianying/工程化/image-20220320121148471.png)
 
 
 
