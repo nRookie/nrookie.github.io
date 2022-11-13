@@ -944,3 +944,115 @@ memory store (the MemTable, discussed in a moment), it will still be possible to
 
 
 
+*SSTables are immutable*
+
+
+
+*Compaction in*
+
+*Cassandra refers to the operation of merging multiple related SSTables into a*
+
+*single new one.*
+
+
+
+
+
+![image-20221019153656870](/Users/kestrel/developer/nrookie.github.io/collections/design_related/grokking advanced system design/image-20221019153656870.png)
+
+
+
+*Sequential writes*
+
+
+
+*Sequential writes are the primary reason that writes perform so well in*
+
+*Cassandra. No reads or seeks of any kind are required for writing a value to*
+
+*Cassandra because all writes are ‘append’ operations.*
+
+
+
+*This makes the speed*
+
+*of the disk one key limitation on performance. Compaction is intended to*
+
+*amortize the reorganization of data, but it uses sequential I/O to do so, which*
+
+*makes it efficient. If Cassandra naively inserted values where they ultimately*
+
+*belonged, writing clients would pay for seeks upfront.*
+
+
+
+
+
+### *Tombstones*
+
+
+
+*Let's explore how Tombstones work in Cassandra.*
+
+
+
+### *What are Tombstones?*
+
+
+
+*An interesting case with Cassandra can be when we delete some data for a*
+
+*node that is down or unreachable, that node could miss a delete. When that*
+
+*node comes back online later and a repair occurs, the node could “resurrect”*
+
+*the data that had been previously deleted by re-sharing it with other nodes.*
+
+
+
+A tombstone is similar to the idea of a “soft delete” fromthe relational database world. When we delete data, Cassandra does notdelete it right away, instead associates a tombstone with it, with a time toexpiry. In other words, a tombstone is a marker that is kept to indicate datathat has been deleted. When we execute a delete operation, the data is notimmediately deleted. Instead, it’s treated as an update operation that places atombstone on the value.
+
+
+
+*Each tombstone has an expiry time associated with it, representing the*
+
+*amount of time that nodes will wait before removing the data permanently.*
+
+*By default, each tombstone has an expiry of ten days. The purpose of this*
+
+*delay is to give a node that is unavailable time to recover. If a node is down*
+
+
+
+longer than this value, then it should be treated as failed and replaced.Tombstones are removed as part of compaction. During compaction, anyrow with an expired tombstone will not be propagated further.
+
+
+
+As a tombstone itself is a record, it takes storage space. Hence, itshould be kept in mind that upon deletion, the application will end upincreasing the data size instead of shrinking it. Furthermore, if there area lot of tombstones, the available storage for the application could besubstantially reduced.
+
+
+
+*When a table accumulates many tombstones, read queries on that table*
+
+*could become slow and can cause serious performance problems like*
+
+*timeouts. This is because we have to read much more data until the*
+
+*actual compaction happens and removes the tombstones.*
+
+
+
+1. Cassandra is a distributed, decentralized, scalable, and highly available NoSQL database.
+2. Cassandra was designed with the understanding that software/hardware failures can and do occur.
+3. Cassandra is a peer-to-peer distributed system, i.e., it does not have any leader or follower nodes. All nodes are equal, and there is no single point of failure.
+4. Data , in Cassandra is automatically distributed across nodes.
+5. Data is replicated across the nodes for fault tolerance and redundancy.
+6. Cassandra uses the consistent Hasing algorithm to distribute the data 
+
+among nodes in the cluster. Cassandra cluster has a ring-type architecture, where its nodes are logically distributed like a ring.
+
+7. Cassandra utilizes  the data model of google's Bigtable, i.e., SSTtables and Memtables.
+8. Cassandra utilizes the distributed features of Amazon's dynamo. i.e., consistent hashing, paritioning, and replication.
+9. Cassandra offers tunable consistency for both read and write operations to adjust the tradeoff between availability and consistency of data.
+10. Cassandra uses the gossip protocol for inter-node communication.
+

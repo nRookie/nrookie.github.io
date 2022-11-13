@@ -9,3 +9,20 @@ Consistent Hashing stores the data managed by a distributed system in a ring. Ea
 
 
 
+
+
+*1. How do we know on which node a particular piece of data will be*
+
+*stored?*
+
+
+
+2. *When we add or remove nodes, how do we know what data will be*
+
+   *moved from existing nodes to the new nodes? Additionally, how can we*
+
+   *minimize data movement when nodes join or leave?*
+
+
+
+![image-20221019155415929](/Users/kestrel/developer/nrookie.github.io/collections/design_related/image-20221019155415929.png)
